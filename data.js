@@ -21,7 +21,7 @@ const defenses = [
     "defEn": "You attribute your own stuff to another person.",
     "defZh": "你把自己的想法、感受或冲动归结到别人身上。",
     "fullDefEn": "You attribute your own stuff to another person.",
-    "caseEn": "Ms. D reported that she thought her boss was angry at her the day before.",
+    "caseEn": "Ms. D became angry when her boss asked her to rush a memo, but she was unaware of her anger. Instead, she spent the entire night worrying that her boss was angry at her. After discussion in therapy, she realized that she had projected her own anger onto her boss.",
     "caseZh": "D女士因为上司让她赶一份备忘录而感到愤怒，但她没有意识到自己的愤怒，反而整夜担心上司在生她的气。经过讨论后她意识到，是她自己把愤怒投射到了上司身上。"
   },
   {
@@ -34,7 +34,7 @@ const defenses = [
     "defEn": "You form an image of another person.",
     "defZh": "你在心里构建出另一个人的形象。",
     "fullDefEn": "You form an image of another person.",
-    "caseEn": "Mr. Z would already be dead. A couple of Monday mornings later, on arriving in my office after the",
+    "caseEn": "Mr. Z wanted to kill himself every time his father belittled him. His therapist explained that he was turning his anger toward his father against himself. Later, he told the therapist that after another episode of belittlement by his father, he had wanted to harm himself, but he heard the therapist's voice in his head saying, \"It would be foolish to hurt yourself over anger at your father\" — and he stayed alive. This is introjection at work.",
     "caseZh": "Z先生每次被父亲贬低后就想自杀。治疗师解释这是他把自己对父亲的愤怒转向了自身。后来他告诉治疗师，在又一次被父亲贬低后，他本想自杀，但脑海中浮现治疗师的声音说'因为生父亲的气而伤害自己是愚蠢的'，于是他活了下来——这就是内摄在起作用。"
   },
   {
@@ -60,7 +60,7 @@ const defenses = [
     "defEn": "Three common ways this term is used: a. Projecting so much of yourself onto someone else that you massively distort him or her. b. Stimulating in someone else your unpleasant affects (“misery loves company”). c. Stimulating in someone else your unpleasant affects, plus acting like the person who had made you feel so bad.",
     "defZh": "三种常见用法：a) 把自己大量投射到他人身上以至于严重扭曲对方；b) 在他人身上激起自己的不愉快情感；c) 在他人身上激起自己的不愉快情感，同时表现得像那个曾经让你痛苦的人。",
     "fullDefEn": "Three common ways this term is used: a. Projecting so much of yourself onto someone else that you massively distort him or her. b. Stimulating in someone else your unpleasant affects (“misery loves company”). c. Stimulating in someone else your unpleasant affects, plus acting like the person who had made you feel so bad.",
-    "caseEn": "Ms. UU, a 23-year-old depressed single woman, described problems in her",
+    "caseEn": "Ms. UU, a 23-year-old depressed single woman, became furious when her therapist arrived one minute late. She berated him: \"You treat me like an invertebrate! You know I can't stand waiting because of my father, and you keep me waiting! I demand an apology!\" The therapist felt unfairly accused yet unable to defend himself — exactly how Ms. UU felt when attacked by her father. Through projective identification, she made the therapist experience her helpless rage firsthand.",
     "caseZh": "23岁的UU女士因为治疗师迟到一分钟而大发雷霆，指责治疗师'把她当成低等生物'。治疗师感到被无理指责却无从辩解——这正是UU女士面对父亲时的感受。通过投射性认同，她让治疗师体验到了她的无助愤怒。"
   },
   {
@@ -73,7 +73,7 @@ const defenses = [
     "defEn": "You unfairly blame somebody else for your problem.",
     "defZh": "你为自己的问题而不公正地指责他人。",
     "fullDefEn": "You unfairly blame somebody else for your problem.",
-    "caseEn": "At 9:30 p.m., a father comes out of his study where he was using the",
+    "caseEn": "At 9:30 p.m., a father emerged from his study and found that his son had not yet done his homework. He immediately accused his wife: \"Why hasn't Jimmy done his homework?\" The mother, who had just hung up from a work call, snapped back: \"I've been busy! Why don't YOU make sure he does his homework?!\" This is a classic example of projective blaming in a family.",
     "caseZh": "晚上9点半，父亲从书房出来发现儿子还没做作业，立刻指责母亲：'为什么Jimmy还没做作业？'母亲刚挂了工作电话，立刻反驳：'我一直很忙！你为什么不管他做作业？！'这是一个家庭中常见的投射性指责。"
   },
   {
@@ -86,7 +86,7 @@ const defenses = [
     "defEn": "Assumes you’ve perceived reality (reality sense is functional): a. Denial per se: Disavowal of a reality in spite of overwhelming evidence of its existence. b. Denial in deed: Behavior that symbolically says, “That nasty reality isn’t true!” c. Denial in fantasy: Maintaining erroneous beliefs so you won’t have to see the reality. d. Denial by words: Using special words to convince yourself of the falsity of a reality.",
     "defZh": "假定你已经感知到了现实，但却加以否认。包括：本质否认、行为上的否认、幻想中的否认、言语上的否认。",
     "fullDefEn": "Assumes you’ve perceived reality (reality sense is functional): a. Denial per se: Disavowal of a reality in spite of overwhelming evidence of its existence. b. Denial in deed: Behavior that symbolically says, “That nasty reality isn’t true!” c. Denial in fantasy: Maintaining erroneous beliefs so you won’t have to see the reality. d. Denial by words: Using special words to convince yourself of the falsity of a reality.",
-    "caseEn": "Mr. Y, a 48-year-old man, was admitted to a mental hospital just after he",
+    "caseEn": "An alcoholic continued to insist \"I can control my drinking\" even after being arrested for DUI, losing his job, and having his family fall apart. Through denial by words, he avoided facing the reality that his drinking was completely out of control.",
     "caseZh": "一个酗酒者即使被逮捕、丢工作、家庭破裂，仍然坚称'我能控制自己的饮酒'。通过言语上的否认，他避免面对自己已经失控的现实。"
   },
   {
@@ -99,7 +99,7 @@ const defenses = [
     "defEn": "You become whatever someone else wants you to be.",
     "defZh": "你变成别人想要你成为的样子。",
     "fullDefEn": "You become whatever someone else wants you to be.",
-    "caseEn": "In West Side Story (Laurents, Bernstein, Sondheim, & Robbins, 1956), the",
+    "caseEn": "After marrying, a woman completely reshaped her life to match her husband's preferences — she cut her hair short when he said he liked short hair, and cut off friends he disapproved of. She became whatever her husband wanted her to be, losing her own sense of self in the process.",
     "caseZh": "一位女士嫁给丈夫后，完全按照丈夫的喜好生活——他说喜欢短发她就剪短发，他说不喜欢她的朋友她就断绝来往。她变成了丈夫想要的样子，失去了自我。"
   },
   {
@@ -112,7 +112,7 @@ const defenses = [
     "defEn": "You see certain people as purely hostile (McDevitt, 1985), and others as purely loving. Or, you now hate the devil you loved.",
     "defZh": "你把某些人看作纯粹敌对的，另一些人看作纯粹可爱的。或者你现在痛恨你曾经爱过的人。",
     "fullDefEn": "You see certain people as purely hostile (McDevitt, 1985), and others as purely loving. Or, you now hate the devil you loved.",
-    "caseEn": "Splitting and projection contribute to the child’s poem:",
+    "caseEn": "A borderline patient idealized her therapist as a \"perfect savior\" at the beginning of treatment. Two months later, after the therapist made a neutral comment, she immediately denounced him as a \"completely incompetent fraud.\" This is splitting — the inability to hold both good and bad aspects of a person in mind simultaneously.",
     "caseZh": "一位边缘人格患者在治疗初期把治疗师理想化为'完美的拯救者'，两个月后因为治疗师说了一句中性的话，立刻将治疗师视为'完全不称职的骗子'。这就是分裂——无法同时容纳好与坏的面向。"
   },
   {
@@ -125,7 +125,7 @@ const defenses = [
     "defEn": "You give human qualities to nonhuman entities.",
     "defZh": "你把人的属性赋予非人类的实体。",
     "fullDefEn": "You give human qualities to nonhuman entities.",
-    "caseEn": "Although this is a prominent mechanism in psychotic adults, it is also common",
+    "caseEn": "A young child spoke to her teddy bear, comforting it and telling it not to be afraid of the thunder. Through animism, the child projected her own fear onto the teddy bear, then soothed herself by soothing the bear.",
     "caseZh": "一个孩子对着玩具熊说话，安慰它不要害怕打雷。通过泛灵论，孩子把自己的恐惧赋予了玩具熊，然后通过安慰玩具熊来安慰自己。"
   },
   {
@@ -138,7 +138,7 @@ const defenses = [
     "defEn": "The person you see isn’t human, so you don’t have to worry.",
     "defZh": "你眼中的人不是真正的人，这样你就不必担忧。",
     "fullDefEn": "The person you see isn’t human, so you don’t have to worry.",
-    "caseEn": "A man in treatment with me reported that he disliked seeing me outside my",
+    "caseEn": "An emergency room physician facing a severely burned patient mentally reframed the patient as \"a body that needs treatment\" rather than a living, suffering person. This deanimation protected the doctor from being overwhelmed by fear and helplessness.",
     "caseZh": "急救医生在面对严重烧伤的病人时，在内心把病人看作'一具需要处理的躯体'而非一个活生生的人。这种去生命化保护医生免于被恐惧和无助感淹没。"
   },
   {
@@ -151,7 +151,7 @@ const defenses = [
     "defEn": "You feel opposite (e.g., so nice you can’t tell you’re angry).",
     "defZh": "你感受到相反的情感（比如你太友善了，以至于看不出你在生气）。",
     "fullDefEn": "You feel opposite (e.g., so nice you can’t tell you’re angry).",
-    "caseEn": "A man laughed as he described a childhood memory of his mother chasing",
+    "caseEn": "A mother who felt intense rage toward her disobedient child instead displayed excessive gentleness and concern. She was unable to consciously experience her anger, because she had transformed it into its opposite through reaction-formation.",
     "caseZh": "一位母亲对不听话的孩子感到极度愤怒，但表现出来的是过度的温柔和关切。她无法意识到自己的愤怒，因为她用反向形成将其转化为相反的情感。"
   },
   {
@@ -164,7 +164,7 @@ const defenses = [
     "defEn": "You go against your conscience (superego). Or you do what you feel guilty about and atone by punishing yourself in another symbolic act.",
     "defZh": "你违背自己的良心（超我），或者做了感到内疚的事后用象征性的行为惩罚自己来赎罪。",
     "fullDefEn": "You go against your conscience (superego). Or you do what you feel guilty about and atone by punishing yourself in another symbolic act.",
-    "caseEn": "Undoing can also occur in obsessional rituals, where you fight",
+    "caseEn": "A person who had unfaithful thoughts about their partner felt overwhelming guilt, then went home and did all the housework and bought their partner an expensive gift. These undoing and ritual behaviors symbolically \"atoned\" for the unacceptable thoughts.",
     "caseZh": "一个人对伴侣有不忠的想法后，感到极度内疚，于是回家后主动做所有家务、给伴侣买礼物。这些撤销与仪式行为象征性地'赎罪'。"
   },
   {
@@ -177,7 +177,7 @@ const defenses = [
     "defEn": "You are unaware of the sensation of affects.",
     "defZh": "你意识不到情感的感觉部分。",
     "fullDefEn": "You are unaware of the sensation of affects.",
-    "caseEn": "A woman tells you matter-of-factly that her husband has not made love to",
+    "caseEn": "A car accident survivor was able to describe every detail of the crash in a calm, detached tone, but felt absolutely none of the fear or sadness associated with it. The affect had been isolated from the memory.",
     "caseZh": "一位车祸幸存者能够用冷静甚至冷淡的语气详细描述事故的每一个细节，但完全没有感受到与之相关的恐惧或悲伤——情感被隔离了。"
   },
   {
@@ -190,7 +190,7 @@ const defenses = [
     "defEn": "You think “Society” will criticize you, but actually you feel guilty.",
     "defZh": "你认为“社会”会批评你，但其实是你自己感到内疚。",
     "fullDefEn": "You think “Society” will criticize you, but actually you feel guilty.",
-    "caseEn": "DEFENSES THAT ARISE IN PSYCHOSEXUAL DEVELOPMENT 29",
+    "caseEn": "A person who made a mistake at work kept saying, \"The company is definitely going to fire me.\" In reality, no one had criticized them at all. Their own guilt was externalized, becoming \"society/the company will condemn me.\"",
     "caseZh": "一个人在工作中犯了错，却不断说'公司肯定会开除我'。实际上没有任何人批评他，是他自己的内疚感被外化了，变成了'社会/公司会指责我'。"
   },
   {
@@ -203,7 +203,7 @@ const defenses = [
     "defEn": "You’re angry at someone, but attack/kill yourself instead.",
     "defZh": "你对某人生气，却转而攻击或伤害自己。",
     "fullDefEn": "You’re angry at someone, but attack/kill yourself instead.",
-    "caseEn": "Once, in interviewing a suicidal woman from Mexico (in Spanish), I",
+    "caseEn": "Ms. J's boyfriend stood her up, and she felt furious but said nothing. That night, she cut her arm with a razor blade. She had turned her anger toward her boyfriend against herself.",
     "caseZh": "J女士的男友放了她鸽子，她感到愤怒但没有表达。当晚她用刀片划伤了自己的手臂。她把对男友的愤怒转向了自身。"
   },
   {
@@ -216,7 +216,7 @@ const defenses = [
     "defEn": "You refuse to cooperate, and treat other people condescendingly.",
     "defZh": "你拒绝合作，并居高临下地对待他人。",
     "fullDefEn": "You refuse to cooperate, and treat other people condescendingly.",
-    "caseEn": "A 42-year-old man consults you because his mother “forced” him to come",
+    "caseEn": "A teenager who was asked to complete extra work at school not only refused, but told the teacher, \"Your stupid class isn't worth my time anyway.\" He used negativism and devaluation to mask his fear of failure.",
     "caseZh": "一位青少年在学校被要求完成额外作业，他不仅拒绝，还对老师说'你这破课根本不值得我花时间'。他用消极主义和贬低来掩盖对失败的恐惧。"
   },
   {
@@ -229,7 +229,7 @@ const defenses = [
     "defEn": "You inhibit yourself from making connections.",
     "defZh": "你阻止自己在不同想法之间建立联系。",
     "fullDefEn": "You inhibit yourself from making connections.",
-    "caseEn": "Ms. W, a 28-year-old woman with problems in heterosexual relationships,",
+    "caseEn": "A businessman caroused and partied Monday through Friday while traveling, but came home on weekends as a devout churchgoer. He prevented any connection from forming between his \"pleasure-seeking self\" and his \"moral self\" — compartmentalization allowed him to avoid facing the internal conflict.",
     "caseZh": "一位商人周一至周五在外面花天酒地，但周末回家时是个虔诚的教徒。他阻止自己在'享乐的自己'和'道德的自己'之间建立联系——分隔化让他不必面对内心的冲突。"
   },
   {
@@ -242,8 +242,8 @@ const defenses = [
     "defEn": "You get into fights to hide unpleasant feelings. First Genital Phase (2 to 6 years)",
     "defZh": "你用打架斗殴来掩盖不愉快的感受。",
     "fullDefEn": "You get into fights to hide unpleasant feelings. First Genital Phase (2 to 6 years)",
-    "caseEn": "A 29-year-old man sheepishly admitted, in session, that when his wife had",
-    "caseZh": "一个在学校被欺负的男孩，回家后毫无理由地打了妹妹。他用敌意攻击来掩盖在学校的无力和羞辱感。"
+    "caseEn": "A boy who was bullied at school came home and hit his younger sister for no apparent reason. He used hostile aggression to mask the powerlessness and humiliation he felt at school.",
+    "caseZh": "一个在学校被欺负的男孩，回家后毫无理由地打了妹妹。他用敌意攻击来掩盖在学校的无力和羞辱感——通过攻击他人来逃避自己是受害者的痛苦感受。"
   },
   {
     "id": 19,
@@ -255,8 +255,8 @@ const defenses = [
     "defEn": "You feel one way toward a person, but shift it to another person or situation.",
     "defZh": "你对一个人有某种感受，却把它转移到了另一个人或情境上。",
     "fullDefEn": "You feel one way toward a person, but shift it to another person or situation.",
-    "caseEn": "A woman’s 11-year-old son left his history book in school. She",
-    "caseZh": "一个人在工作中被老板痛骂，回家后对妻子因为一件小事大吼大叫。他把对老板的愤怒置换到了妻子身上。"
+    "caseEn": "A woman was harshly criticized by her boss at work, then went home and yelled at her husband over a trivial matter. She had displaced her anger from her boss onto her husband.",
+    "caseZh": "一个人在工作中被老板痛骂，回家后对妻子因为一件极小的事大吼大叫。他把对老板的愤怒置换到了妻子身上——对更安全的目标发泄。"
   },
   {
     "id": 20,
@@ -281,7 +281,7 @@ const defenses = [
     "defEn": "You weld together disparate ideas that are contiguous.",
     "defZh": "你把完全不同的、但彼此邻近的想法焊接在一起。",
     "fullDefEn": "You weld together disparate ideas that are contiguous.",
-    "caseEn": "Mr. V sees a Lexus in his therapist’s parking lot, and assumes it belongs to",
+    "caseEn": "Mr. V saw a Lexus in his therapist's parking lot and immediately assumed it belonged to the therapist. In his dream that night, a figure appeared who combined features of his wealthy, critical father and the therapist. Through condensation, two figures who evoked similar feelings of inadequacy were fused into one.",
     "caseZh": "一个人在梦中同时见到了他母亲和他的小学老师，两人的形象融合成了一个角色。现实中他对两人有类似的被控制感，梦境通过凝缩将它们焊接在一起。"
   },
   {
@@ -294,7 +294,7 @@ const defenses = [
     "defEn": "You consciously visualize a scene that is upsetting or pleasant, and know it’s a fantasy.",
     "defZh": "你有意识地想象一个令人不安或愉快的场景，并知道那只是幻想。",
     "fullDefEn": "You consciously visualize a scene that is upsetting or pleasant, and know it’s a fantasy.",
-    "caseEn": "A woman reported a repetitive “vision” of a pleasant, “fresh” green field in",
+    "caseEn": "A woman reported that whenever work stress became overwhelming, she would repeatedly \"see\" a calm, green field in her mind. She knew it was a fantasy, but this daydream helped her temporarily escape the anxiety.",
     "caseZh": "一位女性报告说，每当工作压力大时，她会反复'看到'一片宁静的绿色田野。她知道这是幻想，但这个白日梦帮助她暂时逃避焦虑。"
   },
   {
@@ -307,8 +307,8 @@ const defenses = [
     "defEn": "You lie on purpose, for a reason.",
     "defZh": "你出于某种原因故意撒谎。",
     "fullDefEn": "You lie on purpose, for a reason.",
-    "caseEn": "I once confronted a 10-year-old boy I was evaluating by telling him I knew",
-    "caseZh": "一个青少年对父母说自己昨晚在图书馆学习，实际上他和朋友去了酒吧。他故意撒谎以避免被惩罚。"
+    "caseEn": "A 10-year-old boy told his parents he had been at the library studying the previous evening, when in fact he had gone to a bar with friends. He deliberately lied to avoid being punished.",
+    "caseZh": "一个青少年对父母说自己昨晚在图书馆学习，实际上他和朋友去了酒吧。他故意撒谎以逃避惩罚。这种搪塞是有意识的欺骗。"
   },
   {
     "id": 24,
@@ -320,7 +320,7 @@ const defenses = [
     "defEn": "You lie without knowing it, to relieve lowered self-esteem.",
     "defZh": "你在没有意识到的情况下撒谎，以缓解低自尊。",
     "fullDefEn": "You lie without knowing it, to relieve lowered self-esteem.",
-    "caseEn": "An 86-year-old woman with Alzheimer’s Disease was brought by her",
+    "caseEn": "An 86-year-old woman with Alzheimer's disease told visitors she had graduated from a prestigious university, when in reality she had only taken a summer course there. She unconsciously lied to relieve her low self-esteem about her educational background.",
     "caseZh": "一位女士告诉朋友自己毕业于名校，实际上她只是在那里上过一个暑期课程。她在无意识中撒谎来缓解对自己学历的自卑感。"
   },
   {
@@ -346,7 +346,7 @@ const defenses = [
     "defEn": "You don’t see something upsetting that’s right in front of you.",
     "defZh": "你对就在眼前令人不安的事物视而不见。",
     "fullDefEn": "You don’t see something upsetting that’s right in front of you.",
-    "caseEn": "A 39-year-old man who had been in treatment for several months asked,",
+    "caseEn": "A mother failed to \"see\" the self-harm scars on her daughter's arm, even though the marks were clearly visible. Her anxiety about her daughter possibly having psychological problems caused her to develop a negative hallucination.",
     "caseZh": "一位母亲没有'看到'女儿手臂上的自残伤痕，尽管伤痕就在眼前。她对女儿可能有心理问题的焦虑导致她产生了负性幻觉。"
   },
   {
@@ -359,7 +359,7 @@ const defenses = [
     "defEn": "You are afraid of sex and assertiveness, so you become dependant (oral) or stubborn (anal) instead.",
     "defZh": "你害怕性和独立自强，于是变得依赖（口欲）或顽固（肛欲）。",
     "fullDefEn": "You are afraid of sex and assertiveness, so you become dependant (oral) or stubborn (anal) instead.",
-    "caseEn": "A 31-year-old married homemaker consulted me because she was critical",
+    "caseEn": "A 35-year-old man, when faced with a promotion at work, began relying excessively on his wife to make every decision for him — even what to eat for dinner. Faced with the pressure of independence and success, he regressed to an oral-phase dependent state.",
     "caseZh": "一位35岁的男性在面临晋升后，开始过度依赖妻子做所有决定，甚至吃什么都要问妻子。面临独立和成功的压力，他退行到了口欲期的依赖状态。"
   },
   {
@@ -372,7 +372,7 @@ const defenses = [
     "defEn": "Three ways this term is used: a. Interference with a function: Your ego function or ego strength stops working, so you can’t feel something unpleasant. b. Reversion to earlier defense mechanisms: You start using defense mechanisms that arose in an early stage of development. c. Inefficient defensive operations: Your defenses fail to shut off affect, and the failure relieves guilt by punishing you.",
     "defZh": "三种用法：a) 自我功能或自我力量停止工作，使你感受不到不快；b) 倒退到早期防御机制；c) 防御失效，通过失败来惩罚自己以减轻内疚。",
     "fullDefEn": "Three ways this term is used: a. Interference with a function: Your ego function or ego strength stops working, so you can’t feel something unpleasant. b. Reversion to earlier defense mechanisms: You start using defense mechanisms that arose in an early stage of development. c. Inefficient defensive operations: Your defenses fail to shut off affect, and the failure relieves guilt by punishing you.",
-    "caseEn": "Ms. U, a 45-year-old successful businesswoman, consulted me because of",
+    "caseEn": "A usually articulate executive suddenly went \"blank\" and could not organize her thoughts when discussing her marriage problems in therapy. Her ego function temporarily stopped working to avoid facing painful truths about the marriage.",
     "caseZh": "一位通常逻辑清晰的高管在讨论他的婚姻问题时，突然'脑子一片空白'，无法组织思维。他的自我功能暂时停止工作，以回避面对痛苦的婚姻真相。"
   },
   {
@@ -385,7 +385,7 @@ const defenses = [
     "defEn": "You focus on earlier times to not think about current conflict.",
     "defZh": "你专注于更早的时光，以回避当下的冲突。",
     "fullDefEn": "You focus on earlier times to not think about current conflict.",
-    "caseEn": "A 21-year-old depressed sailor, hospitalized for suicidal ideation, at first",
+    "caseEn": "A 40-year-old woman in marital therapy kept nostalgically recalling a happy romance from her college years, rather than discussing her current problems with her husband. She used temporal regression to avoid the conflicts of the present.",
     "caseZh": "一位40岁的女性在婚姻治疗中，总是不停地回忆她大学时最快乐的一段恋情，而不是讨论现在与丈夫的问题。她通过时间退行回避当下的冲突。"
   },
   {
@@ -424,7 +424,7 @@ const defenses = [
     "defEn": "You act like your favorite hero or heroine.",
     "defZh": "你表现得像你最喜欢的英雄一样。",
     "fullDefEn": "You act like your favorite hero or heroine.",
-    "caseEn": "I had just explained to an attractive, 37-year-old woman in treatment that",
+    "caseEn": "An introverted young boy at a social gathering imitated the confident posture and speech patterns of his favorite superhero. Through identification with a fantasy figure, he temporarily relieved his social anxiety.",
     "caseZh": "一个内向的男孩在社交场合模仿他最喜欢的超级英雄的自信姿态和说话方式。通过与幻想认同，他暂时缓解了社交焦虑。"
   },
   {
@@ -437,7 +437,7 @@ const defenses = [
     "defEn": "You do as your parents forbid, act out their corrupt wishes, and get punished.",
     "defZh": "你做父母禁止的事情，把他们堕落的愿望付诸行动，然后受到惩罚。",
     "fullDefEn": "You do as your parents forbid, act out their corrupt wishes, and get punished.",
-    "caseEn": "Wishes/Fantasies (Johnson & Szurek, 1952)",
+    "caseEn": "A father strictly forbade his son from fighting, but the son discovered that his father had been a street brawler in his youth. The son then began getting into fights regularly, unconsciously acting out his father's forbidden wishes — and then accepting punishment for it.",
     "caseZh": "一位父亲经常严厉禁止儿子打架，但儿子发现父亲年轻时曾是街头混混。儿子开始频繁打架，无意识中替父亲实现了被禁止的愿望，然后接受惩罚。"
   },
   {
@@ -463,7 +463,7 @@ const defenses = [
     "defEn": "You act abusive to a person because someone has acted abusive to you. This protects you from feeling angry.",
     "defZh": "你以虐待的方式对待一个人，因为曾经有人虐待过你。这保护你免于感到愤怒。",
     "fullDefEn": "You act abusive to a person because someone has acted abusive to you. This protects you from feeling angry.",
-    "caseEn": "Tip 1. Look for this defense after you’ve been on vacation or otherwise been",
+    "caseEn": "A woman who had been physically punished by her father as a child used the same physical discipline on her own children, even repeating the exact words her father had said to her. Through identification with the aggressor, she protected herself from recalling the helplessness and rage of being a victim.",
     "caseZh": "一位曾被父亲体罚的女性，在教育自己的孩子时也使用体罚，甚至说出父亲曾对她说过的同样的话。通过与攻击者认同，她保护自己免于回忆起作为受害者的无力感和愤怒。"
   },
   {
@@ -476,7 +476,7 @@ const defenses = [
     "defEn": "You act like someone else by either allowing or seeking victimization. You do this as a rescue wish or to fight off your own anger or guilt.",
     "defZh": "你通过允许或寻求受害来表现得像另一个人，作为一种救赎愿望或为了摆脱愤怒和内疚。",
     "fullDefEn": "You act like someone else by either allowing or seeking victimization. You do this as a rescue wish or to fight off your own anger or guilt.",
-    "caseEn": "Mr. S, a 35-year-old assistant pastor, was constantly allowing himself to be",
+    "caseEn": "A woman who was neglected in childhood repeatedly chose abusive partners as an adult. Through identification with the victim, she attempted to master her trauma by re-experiencing it — a wish for redemption through repetition.",
     "caseZh": "一位童年被忽视的女性，成年后反复选择有虐待倾向的伴侣。通过与受害者认同，她试图通过重新经历受害来掌控它——一种救赎的愿望。"
   },
   {
@@ -502,7 +502,7 @@ const defenses = [
     "defEn": "You make an introject part of your superego.",
     "defZh": "你使一个内摄物成为你超我的一部分。",
     "fullDefEn": "You make an introject part of your superego.",
-    "caseEn": "A 30-year-old woman suffering with marital problems and depression",
+    "caseEn": "A man would never speed while driving, even when no one else was around, because \"Mom always said speeding kills.\" He had introjected his mother's admonition as part of his superego.",
     "caseZh": "一位男性即使在没有人监督的情况下也不会超速，因为'妈妈说过超速会出人命'。他已将母亲的告诫内摄为超我的一部分。"
   },
   {
@@ -515,7 +515,7 @@ const defenses = [
     "defEn": "You seduce someone sexually or sycophantically to relieve fear. Latency Phase (6 to 11 years)",
     "defZh": "你以性或逢迎的方式诱惑某人，以缓解恐惧。",
     "fullDefEn": "You seduce someone sexually or sycophantically to relieve fear. Latency Phase (6 to 11 years)",
-    "caseEn": "Mr. JE, a 30-year-old plumber’s assistant, was upset with his current",
+    "caseEn": "A woman facing an angry male supervisor responded with flirtatious tone and body language to calm her fear. She used sexual allure to \"tame\" a perceived threat — seduction of the aggressor.",
     "caseZh": "一位女性在面对愤怒的男性上司时，用挑逗的语气和肢体语言来缓解自己的恐惧。她通过性诱惑来'驯服'潜在的威胁——引诱攻击者。"
   },
   {
@@ -528,7 +528,7 @@ const defenses = [
     "defEn": "You engage in an activity that symbolically represents a fantasy.",
     "defZh": "你从事一个象征性地代表着某种幻想的活动。",
     "fullDefEn": "You engage in an activity that symbolically represents a fantasy.",
-    "caseEn": "Parents and teachers strive to interest grade-school children in activities-art,",
+    "caseEn": "A teenager with strong aggressive impulses became an accomplished boxer. Through sublimation, his aggressive drives were channeled into a socially acceptable activity that symbolically represented the fantasy of fighting.",
     "caseZh": "一个有强烈攻击冲动的青少年成为了一名出色的拳击手。通过升华，他的攻击冲动被导向了社会接受的活动，象征性地代表了搏斗的幻想。"
   },
   {
@@ -541,7 +541,7 @@ const defenses = [
     "defEn": "You get other people to have sex with or punish you, or both.",
     "defZh": "你使他人与你发生性关系或惩罚你，或两者兼有。",
     "fullDefEn": "You get other people to have sex with or punish you, or both.",
-    "caseEn": "Ms. LM, 37, brought a lawsuit for mental anguish against a man who had",
+    "caseEn": "A woman in therapy kept making provocative comments that seemed designed to make the therapist angry or critical of her. Unconsciously, she was seeking punishment to relieve feelings of guilt.",
     "caseZh": "一位女性在治疗中不断说一些挑衅治疗师的话，似乎想激治疗师发火或批评她。她无意识中寻求被惩罚来缓解内疚感。"
   },
   {
@@ -567,7 +567,7 @@ const defenses = [
     "defEn": "You “overanalyze” and “spin your wheels” trying to solve problems.",
     "defZh": "你“过度分析”和“反复纠结”试图解决问题。",
     "fullDefEn": "You “overanalyze” and “spin your wheels” trying to solve problems.",
-    "caseEn": "A 35-year-old divorced woman spent weeks in therapy trying to “figure",
+    "caseEn": "A patient spent weeks in therapy obsessively analyzing a single remark: \"Why did he say that? What did he really mean? Did I do something wrong? But maybe he was just in a bad mood...\" She used rumination to avoid directly confronting her anxiety.",
     "caseZh": "一位来访者反复思考'他为什么说那句话？他说那句话到底是什么意思？我是不是做错了什么？但也许他只是心情不好……'她用穷思竭虑来避免直接面对焦虑。"
   },
   {
@@ -580,7 +580,7 @@ const defenses = [
     "defEn": "You do exactly what scares you.",
     "defZh": "你越是害怕什么，就越去做什么。",
     "fullDefEn": "You do exactly what scares you.",
-    "caseEn": "An analyst colleague felt, after careful evaluation, that her narcissistic male",
+    "caseEn": "A person with a fear of heights took up rock climbing. Someone afraid of public speaking signed up for a debate competition. Through counterphobic behavior, they actively sought out the feared situation to prove \"I'm not afraid.\"",
     "caseZh": "一个害怕高的人却去学攀岩；一个怕当众讲话的人报名参加演讲比赛。通过反恐惧行为，他们主动面对恐惧来证明'我不怕'。"
   },
   {
@@ -593,7 +593,7 @@ const defenses = [
     "defEn": "You get cranked up about a peculiar theory of behavior.",
     "defZh": "你沉迷于某个特定的行为理论，以此回避情感。",
     "fullDefEn": "You get cranked up about a peculiar theory of behavior.",
-    "caseEn": "A 42-year-old male college professor confessed during evaluation that he",
+    "caseEn": "A person feeling socially anxious at a party launched into a detailed monologue about an obscure philosophy book he had recently read. He used intellectualization to avoid experiencing the discomfort of social anxiety.",
     "caseZh": "一个在派对上感到社交焦虑的人，开始滔滔不绝地讲述他最近读的一本冷门哲学书。他用理智化来避免感受社交焦虑。"
   },
   {
@@ -606,7 +606,7 @@ const defenses = [
     "defEn": "You use your social ability to distract yourself from painful thoughts.",
     "defZh": "你用社交能力来分散注意力，使自己远离痛苦的想法。",
     "fullDefEn": "You use your social ability to distract yourself from painful thoughts.",
-    "caseEn": "LATENCY, ADOLESCENT, AND ASSORTED OTHER DEFENSES 51",
+    "caseEn": "A person who had just gone through a breakup frantically filled their calendar with social events, dinners, and gatherings every night. Through socialization and distancing, they avoided being alone with the pain of heartbreak.",
     "caseZh": "一位刚经历失恋的人疯狂地参加各种社交活动，每天排满饭局和聚会。他用社会化与疏远来避免独处时面对失恋的痛苦。"
   },
   {
@@ -619,7 +619,7 @@ const defenses = [
     "defEn": "You attach symbolic meaning to an ego function (e.g., “Washing dishes is women’s work” irrationally equates a certain type of work with gender).",
     "defZh": "你给一种自我功能赋予象征性的含义（如“洗碗是女人的工作”不合理地把工作类型等同于性别）。",
     "fullDefEn": "You attach symbolic meaning to an ego function (e.g., “Washing dishes is women’s work” irrationally equates a certain type of work with gender).",
-    "caseEn": "High school class clowns sexualize speech by finding sexual meanings in",
+    "caseEn": "A person insisted that \"cooking is women's work.\" By instinctualizing a work function — assigning it a gender meaning — he avoided the sense of inadequacy that might come from learning to cook.",
     "caseZh": "一个人坚持认为'做饭是女人的事'。通过将某种工作功能本能化（赋予性别含义），他回避了学习做饭可能带来的无能感。"
   },
   {
@@ -632,7 +632,7 @@ const defenses = [
     "defEn": "Your instinctualized ego function clashes with guilt, so you shut off the function (e.g., you can’t read because reading is equated with forbidden sexual activity [Anthony, 1961]).",
     "defZh": "你的本能化自我功能与内疚冲突，于是关闭了该功能（如无法阅读，因为阅读被等同于被禁止的性活动）。",
     "fullDefEn": "Your instinctualized ego function clashes with guilt, so you shut off the function (e.g., you can’t read because reading is equated with forbidden sexual activity [Anthony, 1961]).",
-    "caseEn": "Ms. N, a 32-year-old, divorced, educated woman, requested insightdirected",
+    "caseEn": "A teenager suddenly became \"unable\" to read, because reading had been unconsciously equated with a forbidden sexual activity. He shut down this ego function to avoid the associated guilt.",
     "caseZh": "一个青少年突然'无法'阅读了，因为阅读在无意识中被等同于被禁止的性活动。他关闭了这个自我功能来避免内疚。"
   },
   {
@@ -645,7 +645,7 @@ const defenses = [
     "defEn": "You overvalue someone because of: a. narcissism (Freud, 1914a): to relieve shame over your inadequacy b. narcissism (Kohut, 1971): you fuse the person with your overestimated self-image (“selfobject”) c. love: to not experience disappointments d. transference (Freud, 1914b): they’re like a wonderful parent, when you were little.",
     "defZh": "你过于看重某人，原因可能是：a) 自恋：减轻因自身缺陷引起的羞愧；b) 自恋（科胡特）：将对方与夸大的自体影像融合；c) 爱：为不体验到失望；d) 移情：对方像你幼年时美好的父母。",
     "fullDefEn": "You overvalue someone because of: a. narcissism (Freud, 1914a): to relieve shame over your inadequacy b. narcissism (Kohut, 1971): you fuse the person with your overestimated self-image (“selfobject”) c. love: to not experience disappointments d. transference (Freud, 1914b): they’re like a wonderful parent, when you were little.",
-    "caseEn": "(Kohut, 1971): people confuse another person with an overestimation of",
+    "caseEn": "A patient in early therapy described the therapist as \"perfect,\" \"all-knowing,\" and \"able to solve any problem.\" Through idealization, she relieved the shame of her own perceived inadequacy and avoided potential disappointment with the therapist.",
     "caseZh": "一位来访者在治疗初期把治疗师描述为'完美的''无所不知的''能解决一切问题的人'。通过理想化，他减轻了自身缺陷带来的羞耻，也避免了对治疗师可能的失望。"
   },
   {
@@ -658,7 +658,7 @@ const defenses = [
     "defEn": "You look down on someone to preserve your own self- esteem. Adolescence and Later-Second Genital Phase (13 to 20 years plus)",
     "defZh": "你看不起某人以维护自己的自尊。",
     "fullDefEn": "You look down on someone to preserve your own self- esteem. Adolescence and Later-Second Genital Phase (13 to 20 years plus)",
-    "caseEn": "Although fairly overt in narcissistic people, devaluation can occur more subtly.",
+    "caseEn": "A mediocre manager constantly belittled his most capable subordinate, saying he was \"nothing special\" and \"not that impressive.\" Through devaluation, he protected his own fragile self-esteem.",
     "caseZh": "一位能力平平的经理不断贬低他手下最能干的下属，说对方'也就那样''没什么了不起'。通过贬低，他维护了自己脆弱的自尊。"
   },
   {
@@ -671,8 +671,8 @@ const defenses = [
     "defEn": "You use kidding around to avoid painful feelings. If you get extremely wound up, you’re hypomanic (Lewin, 1950; Almansi, 1961).",
     "defZh": "你用开玩笑来避免痛苦的感受。如果过度兴奋，可能是轻躁狂。",
     "fullDefEn": "You use kidding around to avoid painful feelings. If you get extremely wound up, you’re hypomanic (Lewin, 1950; Almansi, 1961).",
-    "caseEn": "Mr. OD, a 33-year-old, dyed-in-the-wool New Yorker transplanted to the",
-    "caseZh": "一个人在讲述自己婚姻破裂的痛苦时，不断插入自嘲的玩笑。他用幽默来避免完全体验悲伤和愤怒。"
+    "caseEn": "A person describing the painful dissolution of his marriage kept inserting self-deprecating jokes throughout the narrative. He used humor to avoid fully experiencing the sadness and anger.",
+    "caseZh": "一个人在讲述自己婚姻破裂的痛苦时，不断插入自嘲的玩笑。他用幽默来避免完全体验悲伤和愤怒——笑可以暂时挡住眼泪。"
   },
   {
     "id": 52,
@@ -684,7 +684,7 @@ const defenses = [
     "defEn": "You stop using abstract thinking (which you have); you blame a “chemical imbalance” or look for a virus to avoid thinking relationships make you upset.",
     "defZh": "你停止使用抽象思维（你本具备的）；你责怪“化学物质失衡”或寻找病毒，以避免思考人际关系令你烦恼。",
     "fullDefEn": "You stop using abstract thinking (which you have); you blame a “chemical imbalance” or look for a virus to avoid thinking relationships make you upset.",
-    "caseEn": "Ms. PW responded that she was embarrassed that she had once been",
+    "caseEn": "A man with marital tension insisted his problem was purely a \"serotonin imbalance\" and that he only needed medication, refusing to discuss the relationship issues. He used concretization — blaming a chemical imbalance — to avoid the pain of confronting interpersonal difficulties.",
     "caseZh": "一个与妻子关系紧张的男人坚持认为自己的问题是'血清素失衡'，只需要吃药就行，拒绝讨论婚姻问题。他用具体化（化学物质失衡这种具象解释）来回避人际关系带来的痛苦。"
   },
   {
@@ -697,7 +697,7 @@ const defenses = [
     "defEn": "You endeavor not to be like one of your parents.",
     "defZh": "你努力让自己不像父母之一。",
     "fullDefEn": "You endeavor not to be like one of your parents.",
-    "caseEn": "LZ, a 21-year-old woman, reluctantly complained that she was having",
+    "caseEn": "A boy whose father was an alcoholic vowed, \"I will never become anything like my father.\" He abstained completely from alcohol and became rigidly self-disciplined. Through disidentification, he avoided the fear of resembling his father.",
     "caseZh": "一个男孩的父亲是酒鬼，他发誓'我绝对不会成为我父亲那样的人'，于是滴酒不沾、极度自律。通过与父亲去认同化，他回避了对与父亲相似的恐惧。"
   },
   {
@@ -710,7 +710,7 @@ const defenses = [
     "defEn": "You surround yourself to guard against sexual impulses.",
     "defZh": "你把自己包围在团体中以防御性冲动。",
     "fullDefEn": "You surround yourself to guard against sexual impulses.",
-    "caseEn": "A young married couple consulted me because of fights. The wife objected",
+    "caseEn": "A teenager joined a religious group that required members to maintain constant group contact and activities. Through group formation, he used the power of the collective to defend against his anxiety about sexual impulses.",
     "caseZh": "一个青少年加入了一个要求成员始终保持集体行动的宗教团体。通过团体形成，他用群体的力量来防御自己对性冲动的恐惧。"
   },
   {
@@ -723,8 +723,8 @@ const defenses = [
     "defEn": "You avoid contact with humans.",
     "defZh": "你避免与人接触。",
     "fullDefEn": "You avoid contact with humans.",
-    "caseEn": "A 55-year-old retired Navy Captain had never been married. His sex life",
-    "caseZh": "一个人在感情受伤后，搬到深山里独居，避免与任何人接触。通过禁欲主义，他回避了再次被伤害的可能。"
+    "caseEn": "After being emotionally hurt in a relationship, a person moved to a remote mountain cabin and avoided all human contact. Through asceticism, he avoided the possibility of being hurt again.",
+    "caseZh": "一个人在感情受伤后，搬到深山里独居，避免与任何人接触。通过禁欲主义的生活方式，他回避了再次被伤害的可能，但也放弃了亲密关系的温暖。"
   },
   {
     "id": 56,
@@ -749,7 +749,7 @@ const defenses = [
     "defEn": "You focus on one emotion to avoid another.",
     "defZh": "你专注于一种情感以回避另一种。",
     "fullDefEn": "You focus on one emotion to avoid another.",
-    "caseEn": "Parents who overreact to their teenager’s staying out late by getting overly",
+    "caseEn": "A person who felt angry at his parents but could not express it instead became excessively focused on how much he loved and appreciated them. He focused on one affect (love) to avoid another (anger).",
     "caseZh": "一个对父母感到愤怒但无法表达的人，转而过度强调自己对父母的爱和感激。他专注于爱这种情感，以回避愤怒。"
   },
   {
@@ -762,7 +762,7 @@ const defenses = [
     "defEn": "You abuse theories. If you also deny and reconstruct reality, you’re probably psychotic.",
     "defZh": "你滥用理论。如果你还否认并重构现实，那么多半是精神病性的。",
     "fullDefEn": "You abuse theories. If you also deny and reconstruct reality, you’re probably psychotic.",
-    "caseEn": "Although in schizophrenia we usually see deficiencies in abstraction ability,",
+    "caseEn": "A person unable to handle the conflict in his marriage began explaining his situation using dense philosophical jargon: \"Existence precedes essence, therefore my marriage is inevitably this way.\" He misused theory — hyperabstraction — to deny and reconstruct reality.",
     "caseZh": "一个无法处理婚姻矛盾的人，开始用艰涩的哲学理论来解释自己的处境，说'存在先于本质，所以我的婚姻注定如此'。他滥用理论（过度抽象化）来否认和重构现实。"
   },
   {
@@ -775,8 +775,8 @@ const defenses = [
     "defEn": "You stop speaking to avoid being found out.",
     "defZh": "你停止讲话以避免被看穿。",
     "fullDefEn": "You stop speaking to avoid being found out.",
-    "caseEn": "The “Silent Cal,” chronically, automatically quiet and unresponsive as an",
-    "caseZh": "一位来访者在治疗中一旦接近核心创伤话题就陷入长时间的沉默。她用缄默来避免被看穿。"
+    "caseEn": "A patient in therapy fell into prolonged silence whenever the conversation approached the core of her trauma. She used reticence to avoid being seen through.",
+    "caseZh": "一位来访者在治疗中一旦接近核心创伤话题就陷入长时间的沉默。她用缄默来避免被看穿——不说话就不会暴露内心的脆弱。"
   },
   {
     "id": 60,
@@ -788,7 +788,7 @@ const defenses = [
     "defEn": "You’re talking too much, but aren’t circumstantial or tangential.",
     "defZh": "你说得太多，但并不详细或切题。",
     "fullDefEn": "You’re talking too much, but aren’t circumstantial or tangential.",
-    "caseEn": "In people with so-called histrionic traits, their talkativeness protects them from",
+    "caseEn": "A person feeling nervous in social settings talked incessantly about trivial matters, filling every gap of silence. He used garrulousness to avoid the anxiety and loneliness that silence would bring.",
     "caseZh": "一位社交场合中感到紧张的人不停地说一些无关紧要的话，填满每一个沉默的间隙。他用饶舌来回避焦虑和孤独感。"
   },
   {
@@ -801,8 +801,8 @@ const defenses = [
     "defEn": "You stay away from situations due to the conflicts they generate.",
     "defZh": "你远离某些情境，因为它们产生冲突。",
     "fullDefEn": "You stay away from situations due to the conflicts they generate.",
-    "caseEn": "Avoidance is usually a secondary defensive operation, after defenses such as",
-    "caseZh": "一个人因为害怕面对前女友，绕远路避免经过她工作的街区。他用回避来远离产生冲突的情境。"
+    "caseEn": "A person took a long detour each day to avoid walking past the block where his ex-girlfriend worked. He used avoidance to stay away from situations that produced inner conflict.",
+    "caseZh": "一个人因为害怕面对前女友，宁愿每天绕远路避开她工作的街区。他用回避来远离产生冲突的情境，但也强化了内心的恐惧。"
   },
   {
     "id": 62,
@@ -814,7 +814,7 @@ const defenses = [
     "defEn": "You automatically adopt a compliant or submissive attitude in the face of aggression.",
     "defZh": "你在面对攻击时自动采取顺从或唯命是从的态度。",
     "fullDefEn": "You automatically adopt a compliant or submissive attitude in the face of aggression.",
-    "caseEn": "Pathological, defensive passivity usually wards off unconscious guilt over",
+    "caseEn": "An employee who was treated unfairly by his boss not only didn't protest, but became even more submissive and ingratiating. He used passivity — an automatic compliant stance — to avoid the fear of directly confronting aggression.",
     "caseZh": "一位员工在被老板不公平对待时，不仅不反驳，反而更加顺从和讨好。他用被动（自动顺从的态度）来回避直接面对攻击带来的恐惧。"
   },
   {
@@ -827,7 +827,7 @@ const defenses = [
     "defEn": "You are God’s gift to earth, have special powers.",
     "defZh": "你认为自己是上帝送给地球的礼物，拥有特殊力量。",
     "fullDefEn": "You are God’s gift to earth, have special powers.",
-    "caseEn": "Mr. Q, a 23-year-old male graduate student with a study inhibition, had",
+    "caseEn": "A young doctor declared that he had invented a completely new treatment method, far more advanced than anyone else's. He used grandiosity and omnipotence to relieve anxiety about his lack of experience.",
     "caseZh": "一位年轻医生宣称自己发明了一种全新的治疗方法，比其他所有人都先进。他用夸大/全能感来缓解对自身经验不足的焦虑。"
   },
   {
@@ -840,7 +840,7 @@ const defenses = [
     "defEn": "“You can’t fire me; I quit!” You control your own victimization.",
     "defZh": "“你不能开除我；我辞职！”你控制自己的受害。",
     "fullDefEn": "“You can’t fire me; I quit!” You control your own victimization.",
-    "caseEn": "Without awareness of their defensive motivations, abused children will often",
+    "caseEn": "A person who knew the company was about to downsize proactively submitted a resignation letter, saying, \"You can't fire me — I quit!\" Through passive-to-active transformation, she took control of her own victimization.",
     "caseZh": "一个知道公司即将裁员的人，主动递交了辞职信，说'你不能开除我，我辞职！'。通过被动转主动，他控制了自己的受害。"
   },
   {
@@ -853,7 +853,7 @@ const defenses = [
     "defEn": "You focus on your body to avoid conflicts with oral, sexual, or hostile impulses.",
     "defZh": "你专注于自己的身体以避免与口欲、性或敌意冲动的冲突。",
     "fullDefEn": "You focus on your body to avoid conflicts with oral, sexual, or hostile impulses.",
-    "caseEn": "A 55-year-old divorced businesswoman had developed pain in her",
+    "caseEn": "A woman who was deeply unhappy in her marriage kept visiting doctors for various minor physical complaints, but refused to discuss her marital problems. She used somatization — focusing on her body — to avoid the relationship conflict.",
     "caseZh": "一位在婚姻中极度不快乐的女性，不断就医检查身体的各种小毛病，但拒绝讨论她的婚姻问题。她用躯体化（专注身体）来回避关系冲突。"
   },
   {
@@ -892,8 +892,8 @@ const defenses = [
     "defEn": "You use sex, eating, or hostility to relieve tension or an unpleasant affect.",
     "defZh": "你用性、进食或敌意来缓解紧张或不愉快的情感。",
     "fullDefEn": "You use sex, eating, or hostility to relieve tension or an unpleasant affect.",
-    "caseEn": "As a defense, a person acts on an urge in order to relieve tension or an",
-    "caseZh": "一个在考试前焦虑不安的学生，一口气吃掉了一整盒冰淇淋和一包薯片。他用冲动化（进食）来缓解紧张。"
+    "caseEn": "A student who felt anxious before an exam ate an entire carton of ice cream and a bag of chips in one sitting. He used impulsivity — binge eating — to relieve the tension.",
+    "caseZh": "一个在考试前焦虑不安的学生，一口气吃掉了一整盒冰淇淋和一包薯片。他用冲动化——通过进食——来缓解紧张，但事后又感到内疚。"
   },
   {
     "id": 69,
@@ -905,8 +905,8 @@ const defenses = [
     "defEn": "You use a concoction to quell unpleasurable affects.",
     "defZh": "你用物质来镇压不愉快的情感。",
     "fullDefEn": "You use a concoction to quell unpleasurable affects.",
-    "caseEn": "Most of the media focus on drug and alcohol abusers concerns ego weakness",
-    "caseZh": "一个社交焦虑的人在参加聚会前必须喝几杯酒。他用物质滥用来镇压不愉快的情感。"
+    "caseEn": "A person with social anxiety had to drink several glasses of alcohol before attending any party. He used substance abuse to suppress the unpleasant affects.",
+    "caseZh": "一个社交焦虑的人在参加聚会前必须喝几杯酒才能出门。他用物质滥用来镇压不愉快的情感——酒精成了社交的\"拐杖\"。"
   },
   {
     "id": 70,
@@ -944,7 +944,7 @@ const defenses = [
     "defEn": "You become the Lone Ranger, not allowing anyone to help you.",
     "defZh": "你变成独行侠，不允许任何人帮助你。",
     "fullDefEn": "You become the Lone Ranger, not allowing anyone to help you.",
-    "caseEn": "Mr. K, a 61-year-old investment banker, had just had a heart attack. In",
+    "caseEn": "A person going through a severe crisis refused all help from friends, insisting \"I can handle this on my own.\" He used pseudoindependence to avoid the vulnerability of depending on others.",
     "caseZh": "一个正在经历严重困难的人拒绝所有朋友的帮助，坚持'我自己能行'。他用假性独立来回避依赖带来的脆弱感。"
   },
   {
@@ -996,7 +996,7 @@ const defenses = [
     "defEn": "You make too much of a deal over something.",
     "defZh": "你在某件事上渲染得太过头了。",
     "fullDefEn": "You make too much of a deal over something.",
-    "caseEn": "Ms. PQ worried because her only child, a 2-year-old girl, would sometimes",
+    "caseEn": "A person who was rejected after a job interview said, \"This is the most catastrophic failure of my life — I will never find a job.\" He used exaggeration to give a seemingly legitimate outlet to his rage about the failure.",
     "caseZh": "一个人在求职被拒后，说'这是我这辈子最灾难性的失败，我永远也找不到工作了'。他用夸大来给自己对失败的愤怒找到一个看似合理的出口。"
   },
   {
@@ -1009,7 +1009,7 @@ const defenses = [
     "defEn": "To not hate someone, you see him as part of an evil group.",
     "defZh": "为了不去憎恨某个人，你把他看成是某个邪恶群体的一部分。",
     "fullDefEn": "To not hate someone, you see him as part of an evil group.",
-    "caseEn": "A married, middle-aged man realizes, through analytic treatment, that his",
+    "caseEn": "A person who disliked a particular coworker didn't say \"I don't like him,\" but instead said, \"People from that department are all the same.\" He used generalization to avoid directly confronting his negative feelings toward a specific person.",
     "caseZh": "一个人因为不喜欢某个同事，不说'我不喜欢他'，而是说'他们那个部门的人都一个德行'。他用泛化来避免直接面对对某人的负面情感。"
   },
   {
@@ -1022,7 +1022,7 @@ const defenses = [
     "defEn": "You reinvent a situation after denying the reality.",
     "defZh": "在否认现实之后，你重塑一个状况。",
     "fullDefEn": "You reinvent a situation after denying the reality.",
-    "caseEn": "Neurotic people do this to relieve guilt or anxiety. Kanzer (1953) suggests that",
+    "caseEn": "A person who was abandoned by their partner rewrote the narrative, saying, \"Actually, I had wanted to break up for a long time — I deliberately made him leave.\" After denying the reality of being abandoned, she reconstructed reality to protect her self-esteem.",
     "caseZh": "一个被伴侣抛弃的人，重新编织了一套叙事，说'其实是我早就想分手了，是我故意让他离开的'。在否认被抛弃的现实后，她重构了现实以保护自尊。"
   },
   {
@@ -1035,7 +1035,7 @@ const defenses = [
     "defEn": "You shift memories of past situations and relationships onto a current person. You then use old defenses to forget the past or to master it by living it again symbolically or changing the ending.",
     "defZh": "你将对既往情境和人际关系的记忆转移到当下的人身上。然后用旧的防御来忘记过去，或通过象征性地再次经历或改写结果来征服过去。",
     "fullDefEn": "You shift memories of past situations and relationships onto a current person. You then use old defenses to forget the past or to master it by living it again symbolically or changing the ending.",
-    "caseEn": "Dr. G, a 40-year-old surgeon, consulted me because he was always late. This",
+    "caseEn": "A patient in therapy began developing intense feelings toward the therapist — simultaneously craving nurturance like a child toward a mother, and feeling rage like a child toward a mother. These memories of past relationships were transferred onto the therapist. This is transference.",
     "caseZh": "一位来访者在治疗中开始对治疗师产生强烈的情感——既像对母亲一样渴望关爱，又像对母亲一样感到愤怒。这些对过去关系的记忆被转移到了治疗师身上，这是移情。"
   },
   {
@@ -1048,7 +1048,7 @@ const defenses = [
     "defEn": "(1) You forget a whole aspect of yourself. If you name it Butch, you are probably psychotic (Frosch, 1983; Gardner, 1994). (2) You get someone to define you, then reject his or her ideas (Whitmer, 2001).",
     "defZh": "1) 你忘记了关于自己的完整面貌；如果给它取名，多半是精神病性的。2) 你让别人定义你，然后驳回对方的想法。",
     "fullDefEn": "(1) You forget a whole aspect of yourself. If you name it Butch, you are probably psychotic (Frosch, 1983; Gardner, 1994). (2) You get someone to define you, then reject his or her ideas (Whitmer, 2001).",
-    "caseEn": "Some therapists and analysts (I.Brenner, 1996, 2001) have reported finding",
+    "caseEn": "A woman who suffered childhood abuse would sometimes \"become\" an entirely different personality — speaking with a different name and voice, claiming she had never been hurt. Through dissociation, she forgot a whole aspect of herself.",
     "caseZh": "一位童年遭受虐待的女性有时会'变成'一个完全不同的人格——用另一个名字、另一种声音说话，声称自己从未受过伤害。通过解离，她忘记了完整的自己。"
   },
   {
@@ -1074,7 +1074,7 @@ const defenses = [
     "defEn": "You have no particular interest in engaging in an activity.",
     "defZh": "你对参与任何活动都没有特别的兴趣。",
     "fullDefEn": "You have no particular interest in engaging in an activity.",
-    "caseEn": "Apathetic people are not necessarily lazy or negative. Their apparent lack of",
+    "caseEn": "A person who had just been fired said, \"I don't care about that job anyway,\" and showed no interest in finding new work. He used apathy to avoid the shame and anxiety of unemployment.",
     "caseZh": "一个刚被解雇的人说'反正我也不在乎那份工作'，对找工作完全提不起兴趣。他用冷漠来回避失业带来的羞耻和焦虑。"
   },
   {
@@ -1088,7 +1088,7 @@ const defenses = [
     "defZh": "你使他人处于戒备状态以缓解自己的焦虑。",
     "fullDefEn": "You put others on guard to relieve your own anxiety.",
     "caseEn": "A boy who felt insecure at school established his position by bullying smaller children. Through intimidation of others, he relieved his own anxiety.",
-    "caseZh": "一个在学校里不安全的男孩通过欺负比他更小的孩子来建立自己的地位。通过恐吓他人，他缓解了自己的焦虑。"
+    "caseZh": "一个在学校里缺乏安全感的男孩，通过欺负比他更小的孩子来建立自己的地位。通过恐吓他人，他暂时缓解了自己的焦虑和无能感。"
   },
   {
     "id": 84,
@@ -1100,7 +1100,7 @@ const defenses = [
     "defEn": "You ostracize those who are more integrated than you are.",
     "defZh": "你排斥那些比你更加整合的人。",
     "fullDefEn": "You ostracize those who are more integrated than you are.",
-    "caseEn": "A 31-year-old single man was still working on his bachelor’s degree from",
+    "caseEn": "A mediocre employee ostracized and distanced himself from high-performing colleagues, calling them \"brown-nosers\" and \"fake.\" Through compensation for deficiencies — excluding those who were better integrated — he protected his self-esteem.",
     "caseZh": "一个在工作中表现平平的员工，排斥和疏远那些表现优秀的同事，说他们'拍马屁''假正经'。他用弥补不足（排斥更优秀的人）来维护自尊。"
   },
   {
@@ -1113,8 +1113,8 @@ const defenses = [
     "defEn": "Twitching to relieve tension/anger.",
     "defZh": "抽动以缓解紧张/愤怒。",
     "fullDefEn": "Twitching to relieve tension/anger.",
-    "caseEn": "Mahler (1944) differentiates psychogenic tic from neurologically based",
-    "caseZh": "一个人在压抑愤怒时出现不自主的眼部抽动。这种心因性抽动在无意识中释放了紧张和愤怒。"
+    "caseEn": "A person suppressing intense anger developed an involuntary eye twitch. This psychogenic tic unconsciously discharged the tension and rage.",
+    "caseZh": "一个人在压抑愤怒时出现不自主的眼部抽动。这种心因性抽动在无意识中释放了被压抑的紧张和愤怒——身体替心理说了话。"
   },
   {
     "id": 86,
@@ -1139,7 +1139,7 @@ const defenses = [
     "defEn": "You partly agree as a way of avoiding rebelliousness.",
     "defZh": "你表达部分同意，作为回避叛逆情绪的方式。",
     "fullDefEn": "You partly agree as a way of avoiding rebelliousness.",
-    "caseEn": "I have in mind those individuals who react not with doubt or disputation,",
+    "caseEn": "A teenager, when scolded by his parents, responded with \"OK, some of what you say makes sense,\" while internally completely disagreeing. He used qualified agreement to avoid the conflict that direct rebellion would cause.",
     "caseZh": "一个青少年在被父母训斥时，说'好吧，你们说的有些道理'，但实际上内心完全不认同。他用有保留的同意来避免直接叛逆带来的冲突。"
   },
   {
@@ -1152,7 +1152,7 @@ const defenses = [
     "defEn": "You give a gender connotation to your weakness in affect-tolerance or impulse control (masculine or feminine).",
     "defZh": "你给自己在情感容忍度或冲动控制方面的弱点赋予性别内涵（雄性或雌性）。",
     "fullDefEn": "You give a gender connotation to your weakness in affect-tolerance or impulse control (masculine or feminine).",
-    "caseEn": "In heterosexual men who are so troubled by homosexual fantasies (Coates &",
+    "caseEn": "A man who felt ashamed of his poor emotional control attributed it to \"just being a man — I'm direct and straightforward.\" He instinctualized an ego weakness — assigning it a masculine gender meaning — to avoid addressing the problem of emotional regulation.",
     "caseZh": "一个对自己情绪控制能力差感到羞耻的男性，把这归因为'我性格就是比较man，直来直去'。他将自我弱点本能化（赋予男性气质），回避面对情绪管理的问题。"
   },
   {
@@ -1165,8 +1165,8 @@ const defenses = [
     "defEn": "You fake it, perhaps habitually.",
     "defZh": "你伪装事实，可能是习惯性的。",
     "fullDefEn": "You fake it, perhaps habitually.",
-    "caseEn": "Although it is not uncommon for adolescents to “try on” various roles, to",
-    "caseZh": "一个人在社交场合中总是戴着一副'面具'，用不真实的自我呈现来隐藏真实的感受和想法。"
+    "caseEn": "A person constantly wore a \"mask\" in social situations, presenting an inauthentic version of herself to conceal her true feelings and thoughts.",
+    "caseZh": "一个人在社交场合中总是戴着一副\"面具\"，用不真实的自我呈现来隐藏真实的感受和想法。久而久之，连他自己也分不清哪个是真的自己。"
   },
   {
     "id": 90,
@@ -1191,7 +1191,7 @@ const defenses = [
     "defEn": "You hide details.",
     "defZh": "你隐藏细节。",
     "fullDefEn": "You hide details.",
-    "caseEn": "A middle-aged woman complained in session that she had “a terrible",
+    "caseEn": "When asked \"What did you do this weekend?\", a person replied, \"Nothing special, just wandered around a bit\" — when in fact they had met up with an important old friend. They used vagueness to conceal details.",
     "caseZh": "一个被问到'你周末做了什么'的人回答说'没做什么特别的，就到处转转'，其实他周末去见了一个重要的旧友。他用含糊来隐藏细节。"
   },
   {
@@ -1205,7 +1205,7 @@ const defenses = [
     "defZh": "你沉迷于美和真理中，回避现实或情感。",
     "fullDefEn": "You get into beauty and truth, avoiding reality or affects.",
     "caseEn": "A person immersed himself in fine art and classical music, using the pursuit of beauty and truth to avoid dealing with real-life relationships and problems.",
-    "caseZh": "一个人沉浸在艺术品和古典音乐中，用对美和真理的追求来回避处理现实生活中的关系和问题。"
+    "caseZh": "一个人整日沉浸在艺术品和古典音乐中，用对美和真理的追求来回避处理现实生活中的关系和问题。美的世界成了逃避现实的避难所。"
   },
   {
     "id": 93,
@@ -1217,7 +1217,7 @@ const defenses = [
     "defEn": "You speak readily but don’t mean much of it.",
     "defZh": "你毫不犹豫地说着话，但并没有想要表达很多。",
     "fullDefEn": "You speak readily but don’t mean much of it.",
-    "caseEn": "A single, 35-year-old woman in treatment reported a dream in which a man",
+    "caseEn": "A person in an important meeting spoke smoothly and charmingly, but on closer listening had said nothing of substance. He used glibness to avoid genuine communication.",
     "caseZh": "一个人在重要会议上轻松地说着漂亮话，但仔细一听其实什么实质内容都没说。他用油嘴滑舌来回避真正的交流。"
   },
   {
@@ -1230,7 +1230,7 @@ const defenses = [
     "defEn": "You “nullify the object,” halting your hatred.",
     "defZh": "你“作废客体”，终止你的仇恨。",
     "fullDefEn": "You “nullify the object,” halting your hatred.",
-    "caseEn": "Physical violence has a long and controversial history-pacifists versus",
+    "caseEn": "A man who suffered childhood violence later used physical violence against his own partner when enraged. Through physical violence, he \"abolished the object\" that stirred his hatred, thereby terminating the unbearable feeling.",
     "caseZh": "一位童年遭受暴力的男性，成年后在愤怒时也会对伴侣使用暴力。通过身体暴力，他'作废'了激发他仇恨的客体，以此终止无法忍受的仇恨感。"
   },
   {
@@ -1243,7 +1243,7 @@ const defenses = [
     "defEn": "You model yourself after wounded birds you’ve known (and sometimes, loved).",
     "defZh": "你仿效自己认识的（有时是所爱的）受伤小鸟。",
     "fullDefEn": "You model yourself after wounded birds you’ve known (and sometimes, loved).",
-    "caseEn": "A 40-year-old man was not finishing his work. He then would confess this",
+    "caseEn": "A therapist found herself particularly drawn to \"wounded\" patients, always wanting to \"save\" them. She was likely modeling herself after an injured figure from her own childhood — perhaps a depressed mother. This is identification with the injured object.",
     "caseZh": "一位治疗师发现自己特别容易被'受伤的'来访者吸引，总是想要'拯救'他们。他可能在仿效童年时认识的一个受伤的人（也许是抑郁的母亲），这是与受伤客体认同。"
   },
   {
@@ -1295,7 +1295,7 @@ const defenses = [
     "defEn": "You feel tired, but you’re not physically ill.",
     "defZh": "你感到疲惫，但没有躯体疾病。",
     "fullDefEn": "You feel tired, but you’re not physically ill.",
-    "caseEn": "Fatigue is an extremely common complaint heard in general medical practices.",
+    "caseEn": "A person facing an overwhelming workload suddenly felt utterly exhausted, even though all medical tests came back normal. This fatigue served as a psychological defense, avoiding the anxiety and frustration the work would bring.",
     "caseZh": "一个面对繁重工作任务的人突然感到极度疲惫，但体检一切正常。这种疲劳是一种心理防御，避免面对工作带来的焦虑或挫败感。"
   },
   {
@@ -1308,7 +1308,7 @@ const defenses = [
     "defEn": "You’re honest and blunt, but this covers up your actual thoughts and feelings.",
     "defZh": "你诚实而坦率，但这点掩饰了你实际的想法和情感。",
     "fullDefEn": "You’re honest and blunt, but this covers up your actual thoughts and feelings.",
-    "caseEn": "LATENCY, ADOLESCENT, AND ASSORTED OTHER DEFENSES 91",
+    "caseEn": "A person bluntly told a friend, \"You look fat in that outfit,\" and then added, \"I'm just being honest.\" He used frankness as a defense, masking the underlying aggression in the comment.",
     "caseZh": "一个人对朋友直言不讳地说'你穿这件衣服看起来很胖'，然后补充说'我只是实话实说'。他用直率作为防御，掩盖了话中隐含的攻击性。"
   },
   {
@@ -1321,7 +1321,7 @@ const defenses = [
     "defEn": "Criticism onto the Object—You criticize somebody else instead of berating yourself.",
     "defZh": "你批评别人而不是责备自己。",
     "fullDefEn": "Criticism onto the Object—You criticize somebody else instead of berating yourself.",
-    "caseEn": "Mr. UV, a 33-year-old man hospitalized for suicidal ideation, complained",
+    "caseEn": "Mr. UV, a 33-year-old man hospitalized for suicidal ideation, constantly criticized his wife for being too fat and eating too much. The therapist pointed out that he himself had weight issues — what he criticized in his wife was precisely what he did not want to see in himself. He was turning self-criticism onto the object.",
     "caseZh": "UV先生因自杀意念住院，他不断批评妻子太胖、吃太多。治疗师指出他自己也有体重问题，他批评妻子的实际上是他不想在自己身上看到的东西。他将自我批判转向了客体。"
   }
 ];
