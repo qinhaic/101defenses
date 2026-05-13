@@ -565,10 +565,15 @@ function render() {
     );
   }
 
-  stats.textContent = `显示 ${filtered.length} / ${defenses.length} 种防御机制`;
+  stats.textContent = currentLang === 'en'
+    ? `Showing ${filtered.length} of ${defenses.length} defenses`
+    : `显示 ${filtered.length} / ${defenses.length} 种防御机制`;
 
   if (filtered.length === 0) {
-    grid.innerHTML = '<div class="empty"><div class="empty-icon">📭</div><p>没有找到匹配的防御机制</p><p style="font-size:0.85rem">试试换个关键词？</p></div>';
+    const msg = currentLang === 'en'
+      ? '<div class="empty"><div class="empty-icon">📭</div><p>No matching defenses found</p><p style="font-size:0.85rem">Try a different keyword?</p></div>'
+      : '<div class="empty"><div class="empty-icon">📭</div><p>没有找到匹配的防御机制</p><p style="font-size:0.85rem">试试换个关键词？</p></div>';
+    grid.innerHTML = msg;
     return;
   }
 
@@ -617,30 +622,47 @@ function openDetail(id) {
   const d = defenses.find(x => x.id === id);
   if (!d) return;
 
-  const enCase = d.caseEn ? `<div class="modal-section">
-      <h4>📋 Clinical Case Example</h4>
-      <p>${d.caseEn}</p>
-    </div>` : '';
-  const zhCase = d.caseZh ? `<div class="modal-section">
-      <h4>📋 临床案例</h4>
-      <p>${d.caseZh}</p>
-    </div>` : '';
+  const phaseTag = `<span class="card-phase phase-${d.phase}">${currentLang === 'en' ? d.phaseEn : d.phaseZh}</span>`;
 
-  modalContent.innerHTML = `
-    <div class="modal-num">#${d.id} · <span class="card-phase phase-${d.phase}">${d.phaseZh}</span> · ${d.phaseEn}</div>
-    <div class="modal-name-en">${d.en}</div>
-    <div class="modal-name-zh">${d.zh}</div>
-    <div class="modal-section">
-      <h4>English Definition</h4>
-      <p>${d.fullDefEn}</p>
-    </div>
-    <div class="modal-section">
-      <h4>中文定义</h4>
-      <p>${d.defZh}</p>
-    </div>
-    ${zhCase}
-    ${enCase}
-  `;
+  if (currentLang === 'en') {
+    modalContent.innerHTML = `
+      <div class="modal-num">#${d.id} · ${phaseTag}</div>
+      <div class="modal-name-en">${d.en}</div>
+      <div class="modal-section">
+        <h4>Definition</h4>
+        <p>${d.fullDefEn}</p>
+      </div>
+      ${d.caseEn ? `<div class="modal-section"><h4>📋 Clinical Case Example</h4><p>${d.caseEn}</p></div>` : ''}
+    `;
+  } else if (currentLang === 'zh') {
+    modalContent.innerHTML = `
+      <div class="modal-num">#${d.id} · ${phaseTag}</div>
+      <div class="modal-name-zh">${d.zh}</div>
+      <div class="modal-section">
+        <h4>定义</h4>
+        <p>${d.defZh}</p>
+      </div>
+      ${d.caseZh ? `<div class="modal-section"><h4>📋 临床案例</h4><p>${d.caseZh}</p></div>` : ''}
+    `;
+  } else {
+    // both
+    modalContent.innerHTML = `
+      <div class="modal-num">#${d.id} · ${phaseTag} · ${d.phaseEn}</div>
+      <div class="modal-name-en">${d.en}</div>
+      <div class="modal-name-zh">${d.zh}</div>
+      <div class="modal-section">
+        <h4>English Definition</h4>
+        <p>${d.fullDefEn}</p>
+      </div>
+      <div class="modal-section">
+        <h4>中文定义</h4>
+        <p>${d.defZh}</p>
+      </div>
+      ${d.caseZh ? `<div class="modal-section"><h4>📋 临床案例</h4><p>${d.caseZh}</p></div>` : ''}
+      ${d.caseEn ? `<div class="modal-section"><h4>📋 Clinical Case Example</h4><p>${d.caseEn}</p></div>` : ''}
+    `;
+  }
+
   modalOverlay.classList.add('show');
   document.body.style.overflow = 'hidden';
 }
@@ -671,8 +693,15 @@ document.getElementById('langToggle').addEventListener('click', (e) => {
     e.target.classList.add('active');
     currentLang = e.target.dataset.lang;
     if (currentView === 'cases') {
+      stats.textContent = currentLang === 'en'
+        ? `${caseStudies.length} multi-defense case studies`
+        : `显示 ${caseStudies.length} 个多重防御案例`;
       renderCases();
-    } else if (currentView === 'defenses') {
+    } else if (currentView === 'ai') {
+      stats.textContent = currentLang === 'en'
+        ? 'AI Defense Analysis (for educational reference only)'
+        : 'AI 防御机制分析（仅供学习参考）';
+    } else {
       render();
     }
   }
@@ -776,11 +805,15 @@ document.getElementById('viewToggle').addEventListener('click', (e) => {
 
     if (currentView === 'cases') {
       caseGrid.style.display = 'grid';
-      stats.textContent = `显示 ${caseStudies.length} 个多重防御案例`;
+      stats.textContent = currentLang === 'en'
+        ? `${caseStudies.length} multi-defense case studies`
+        : `显示 ${caseStudies.length} 个多重防御案例`;
       renderCases();
     } else if (currentView === 'ai') {
       document.getElementById('aiContainer').style.display = 'block';
-      stats.textContent = 'AI 防御机制分析（仅供学习参考）';
+      stats.textContent = currentLang === 'en'
+        ? 'AI Defense Analysis (for educational reference only)'
+        : 'AI 防御机制分析（仅供学习参考）';
       if (typeof renderAIAnalysisView === 'function') {
         renderAIAnalysisView();
       }
