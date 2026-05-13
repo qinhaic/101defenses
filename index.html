@@ -575,9 +575,9 @@ function render() {
   grid.innerHTML = filtered.map(d => {
     const enName = highlight(d.en);
     const zhName = highlight(d.zh);
-    const defText = currentLang === 'en' ? d.defEn :
-                     currentLang === 'zh' ? d.defZh :
-                     d.defZh; // default show Chinese def on card
+    const phaseLabel = currentLang === 'en' ? d.phaseEn :
+                       currentLang === 'zh' ? d.phaseZh :
+                       d.phaseZh;
 
     let displayName = '';
     let displayDef = '';
@@ -590,14 +590,15 @@ function render() {
       displayDef = `<div class="card-def">${d.defZh}</div>`;
     } else {
       displayName = `<div class="card-name-en">${enName}</div><div class="card-name-zh">${zhName}</div>`;
-      displayDef = `<div class="card-def">${d.defZh}</div>`;
+      displayDef = `<div class="card-def">${d.defZh}</div><div class="card-def" style="color:var(--text-secondary);font-size:0.8rem">${d.defEn}</div>`;
     }
 
-    const hasCase = d.caseZh ? ' <span style="font-size:0.7rem;opacity:0.6" title="含临床案例">📋</span>' : '';
+    const hasCase = (currentLang === 'en' && d.caseEn) || (currentLang === 'zh' && d.caseZh) || d.caseZh ?
+      ' <span style="font-size:0.7rem;opacity:0.6" title="含临床案例">📋</span>' : '';
     return `
       <div class="card" onclick="openDetail(${d.id})" data-id="${d.id}">
         <div class="card-num">${d.id}</div>
-        <span class="card-phase phase-${d.phase}">${d.phaseZh}</span>
+        <span class="card-phase phase-${d.phase}">${phaseLabel}</span>
         ${displayName}${hasCase}
         ${displayDef}
       </div>
@@ -616,16 +617,17 @@ function openDetail(id) {
   const d = defenses.find(x => x.id === id);
   if (!d) return;
 
-  let caseHtml = '';
-  if (d.caseZh || d.caseEn) {
-    caseHtml = `<div class="modal-section">
-      <h4>临床案例 / Clinical Case</h4>
-      ${d.caseZh ? `<p style="margin-bottom:0.8rem">${d.caseZh}</p>` : ''}
-      ${d.caseEn ? `<p style="color:var(--text-secondary);font-size:0.9rem">${d.caseEn}</p>` : ''}
-    </div>`;
-  }
+  const enCase = d.caseEn ? `<div class="modal-section">
+      <h4>📋 Clinical Case Example</h4>
+      <p>${d.caseEn}</p>
+    </div>` : '';
+  const zhCase = d.caseZh ? `<div class="modal-section">
+      <h4>📋 临床案例</h4>
+      <p>${d.caseZh}</p>
+    </div>` : '';
+
   modalContent.innerHTML = `
-    <div class="modal-num">#${d.id} · ${d.phaseZh}</div>
+    <div class="modal-num">#${d.id} · <span class="card-phase phase-${d.phase}">${d.phaseZh}</span> · ${d.phaseEn}</div>
     <div class="modal-name-en">${d.en}</div>
     <div class="modal-name-zh">${d.zh}</div>
     <div class="modal-section">
@@ -636,7 +638,8 @@ function openDetail(id) {
       <h4>中文定义</h4>
       <p>${d.defZh}</p>
     </div>
-    ${caseHtml}
+    ${zhCase}
+    ${enCase}
   `;
   modalOverlay.classList.add('show');
   document.body.style.overflow = 'hidden';
@@ -667,7 +670,11 @@ document.getElementById('langToggle').addEventListener('click', (e) => {
     document.querySelectorAll('#langToggle .toggle-btn').forEach(b => b.classList.remove('active'));
     e.target.classList.add('active');
     currentLang = e.target.dataset.lang;
-    render();
+    if (currentView === 'cases') {
+      renderCases();
+    } else if (currentView === 'defenses') {
+      render();
+    }
   }
 });
 
@@ -684,9 +691,48 @@ document.addEventListener('keydown', (e) => {
 function renderCases() {
   caseGrid.innerHTML = caseStudies.map(cs => {
     const defsHtml = cs.defensesUsed.map(d =>
-      `<span class="case-def-tag" onclick="event.stopPropagation();openDetail(${d.id})" title="${d.note}">#${d.id} ${d.zh}</span>`
+      `<span class="case-def-tag" onclick="event.stopPropagation();openDetail(${d.id})" title="${d.note}">#${d.id} ${currentLang === 'en' ? d.name : d.zh}</span>`
     ).join(' ');
 
+    if (currentLang === 'en') {
+      return `
+        <div class="case-card">
+          <div class="case-header">
+            <div class="case-title-en">${cs.titleEn}</div>
+            <div class="case-phase">${cs.phase}</div>
+          </div>
+          <div class="case-narrative"><p>${cs.narrativeEn}</p></div>
+          <div class="case-defenses">
+            <div class="case-label">Defenses Used</div>
+            <div class="case-def-tags">${defsHtml}</div>
+          </div>
+          <div class="case-outcome">
+            <div class="case-label">Outcome</div>
+            <p>${cs.outcomeEn}</p>
+          </div>
+        </div>`;
+    }
+
+    if (currentLang === 'zh') {
+      return `
+        <div class="case-card">
+          <div class="case-header">
+            <div class="case-title-zh">${cs.titleZh}</div>
+            <div class="case-phase">${cs.phase}</div>
+          </div>
+          <div class="case-narrative"><p>${cs.narrativeZh}</p></div>
+          <div class="case-defenses">
+            <div class="case-label">防御机制</div>
+            <div class="case-def-tags">${defsHtml}</div>
+          </div>
+          <div class="case-outcome">
+            <div class="case-label">结果</div>
+            <p>${cs.outcomeZh}</p>
+          </div>
+        </div>`;
+    }
+
+    // both — show bilingual
     return `
       <div class="case-card">
         <div class="case-header">
@@ -696,43 +742,19 @@ function renderCases() {
         </div>
         <div class="case-narrative">
           <p>${cs.narrativeZh}</p>
+          <p style="color:var(--text-secondary);margin-top:0.5rem;font-size:0.9rem">${cs.narrativeEn}</p>
         </div>
         <div class="case-defenses">
-          <div class="case-label">防御机制 / Defenses Used:</div>
+          <div class="case-label">防御机制 / Defenses Used</div>
           <div class="case-def-tags">${defsHtml}</div>
         </div>
         <div class="case-outcome">
-          <div class="case-label">结果 / Outcome:</div>
+          <div class="case-label">结果 / Outcome</div>
           <p>${cs.outcomeZh}</p>
+          <p style="color:var(--text-secondary);margin-top:0.5rem;font-size:0.9rem">${cs.outcomeEn}</p>
         </div>
-      </div>
-    `;
+      </div>`;
   }).join('');
-
-  if (currentLang === 'en') {
-    caseGrid.innerHTML = caseStudies.map(cs => {
-      const defsHtml = cs.defensesUsed.map(d =>
-        `<span class="case-def-tag" onclick="event.stopPropagation();openDetail(${d.id})" title="${d.note}">#${d.id} ${d.name}</span>`
-      ).join(' ');
-      return `
-        <div class="case-card">
-          <div class="case-header">
-            <div class="case-title-en">${cs.titleEn}</div>
-            <div class="case-phase">${cs.phase}</div>
-          </div>
-          <div class="case-narrative"><p>${cs.narrativeEn}</p></div>
-          <div class="case-defenses">
-            <div class="case-label">Defenses Used:</div>
-            <div class="case-def-tags">${defsHtml}</div>
-          </div>
-          <div class="case-outcome">
-            <div class="case-label">Outcome:</div>
-            <p>${cs.outcomeEn}</p>
-          </div>
-        </div>
-      `;
-    }).join('');
-  }
 }
 
 // View toggle

@@ -47,7 +47,7 @@ const defenses = [
     "defEn": "You see or hear what you are trying not to think about—wishes, comments, fantasies, or criticisms—with no reality testing. Anal Phase (1.5 to 5 years)",
     "defZh": "你看到或听到自己试图不去想的东西——愿望、意见、幻想或批评——且没有现实检验。",
     "fullDefEn": "You see or hear what you are trying not to think about—wishes, comments, fantasies, or criticisms—with no reality testing. Anal Phase (1.5 to 5 years)",
-    "caseEn": "",
+    "caseEn": "A psychotic patient sees and hears the very thoughts he is trying not to think — wishes, criticisms, or fantasies — but cannot distinguish whether they originate from his own mind or from external reality, because reality-testing has broken down.",
     "caseZh": "精神病患者看到或听到自己试图不去想的念头——愿望、批评或幻想——但无法区分这些是自己的思想还是外部现实，因为现实检验功能已经失效。"
   },
   {
@@ -57,7 +57,7 @@ const defenses = [
     "phaseZh": "肛欲期 (1.5-5岁)",
     "en": "Projective Identification",
     "zh": "投射性认同",
-    "defEn": "Three common ways this term is used: a. Projecting so much of yourself onto someone else that you massively distort him or her. b. Stimulating in someone else your unpleasant affects (“misery loves co...",
+    "defEn": "Three common ways this term is used: a. Projecting so much of yourself onto someone else that you massively distort him or her. b. Stimulating in someone else your unpleasant affects (“misery loves company”). c. Stimulating in someone else your unpleasant affects, plus acting like the person who had made you feel so bad.",
     "defZh": "三种常见用法：a) 把自己大量投射到他人身上以至于严重扭曲对方；b) 在他人身上激起自己的不愉快情感；c) 在他人身上激起自己的不愉快情感，同时表现得像那个曾经让你痛苦的人。",
     "fullDefEn": "Three common ways this term is used: a. Projecting so much of yourself onto someone else that you massively distort him or her. b. Stimulating in someone else your unpleasant affects (“misery loves company”). c. Stimulating in someone else your unpleasant affects, plus acting like the person who had made you feel so bad.",
     "caseEn": "Ms. UU, a 23-year-old depressed single woman, described problems in her",
@@ -83,7 +83,7 @@ const defenses = [
     "phaseZh": "肛欲期 (1.5-5岁)",
     "en": "Denial",
     "zh": "否认",
-    "defEn": "Assumes you’ve perceived reality (reality sense is functional): a. Denial per se: Disavowal of a reality in spite of overwhelming evidence of its existence. b. Denial in deed: Behavior that symbolical...",
+    "defEn": "Assumes you’ve perceived reality (reality sense is functional): a. Denial per se: Disavowal of a reality in spite of overwhelming evidence of its existence. b. Denial in deed: Behavior that symbolically says, “That nasty reality isn’t true!” c. Denial in fantasy: Maintaining erroneous beliefs so you won’t have to see the reality. d. Denial by words: Using special words to convince yourself of the falsity of a reality.",
     "defZh": "假定你已经感知到了现实，但却加以否认。包括：本质否认、行为上的否认、幻想中的否认、言语上的否认。",
     "fullDefEn": "Assumes you’ve perceived reality (reality sense is functional): a. Denial per se: Disavowal of a reality in spite of overwhelming evidence of its existence. b. Denial in deed: Behavior that symbolically says, “That nasty reality isn’t true!” c. Denial in fantasy: Maintaining erroneous beliefs so you won’t have to see the reality. d. Denial by words: Using special words to convince yourself of the falsity of a reality.",
     "caseEn": "Mr. Y, a 48-year-old man, was admitted to a mental hospital just after he",
@@ -268,7 +268,7 @@ const defenses = [
     "defEn": "You give irrational meaning to some aspect of mental functioning.",
     "defZh": "你给心理功能的某些方面赋予不合理的含义。",
     "fullDefEn": "You give irrational meaning to some aspect of mental functioning.",
-    "caseEn": "",
+    "caseEn": "A patient repeatedly dreamed of a \"bird trapped in a cage.\" In therapy, it became clear that the bird symbolized her feelings about her marriage — trapped but unable to express it.",
     "caseZh": "一位来访者在梦中反复出现'被困在笼子里的鸟'。在治疗中发现，这只鸟象征着她对婚姻的感受——被困住但无法表达。"
   },
   {
@@ -333,7 +333,7 @@ const defenses = [
     "defEn": "You forget thoughts without wanting to.",
     "defZh": "你忘记了某些想法，而并非真的想要忘记。",
     "fullDefEn": "You forget thoughts without wanting to.",
-    "caseEn": "",
+    "caseEn": "A woman completely forgot the \"hot sex date\" she had planned with her husband, because the previous night he had fought with her about smoking marijuana. Her anger toward her husband was repressed — the date vanished from memory.",
     "caseZh": "一位女士完全忘记了与丈夫约定的'亲密约会'，因为前一天晚上丈夫为吸大麻的事与她争吵。她对丈夫的愤怒被压抑了——约会从记忆中消失。"
   },
   {
@@ -369,7 +369,7 @@ const defenses = [
     "phaseZh": "第一性器期 (2-6岁)",
     "en": "Ego Regression",
     "zh": "自我退行",
-    "defEn": "Three ways this term is used: a. Interference with a function: Your ego function or ego strength stops working, so you can’t feel something unpleasant. b. Reversion to earlier defense mechanisms: You ...",
+    "defEn": "Three ways this term is used: a. Interference with a function: Your ego function or ego strength stops working, so you can’t feel something unpleasant. b. Reversion to earlier defense mechanisms: You start using defense mechanisms that arose in an early stage of development. c. Inefficient defensive operations: Your defenses fail to shut off affect, and the failure relieves guilt by punishing you.",
     "defZh": "三种用法：a) 自我功能或自我力量停止工作，使你感受不到不快；b) 倒退到早期防御机制；c) 防御失效，通过失败来惩罚自己以减轻内疚。",
     "fullDefEn": "Three ways this term is used: a. Interference with a function: Your ego function or ego strength stops working, so you can’t feel something unpleasant. b. Reversion to earlier defense mechanisms: You start using defense mechanisms that arose in an early stage of development. c. Inefficient defensive operations: Your defenses fail to shut off affect, and the failure relieves guilt by punishing you.",
     "caseEn": "Ms. U, a 45-year-old successful businesswoman, consulted me because of",
@@ -398,7 +398,7 @@ const defenses = [
     "defEn": "You dream to avoid painful reality.",
     "defZh": "你通过做梦来逃避痛苦的现实。",
     "fullDefEn": "You dream to avoid painful reality.",
-    "caseEn": "",
+    "caseEn": "A man who experienced a serious car accident during the day had a peaceful dream that night about walking calmly by the seaside. Through topographic regression (dreaming), he temporarily escaped the traumatic reality of the day.",
     "caseZh": "一位在白天经历了严重车祸的人，当晚做了一个关于在海边平静散步的美梦。通过地形学退行（做梦），他暂时逃避了白天的创伤性现实。"
   },
   {
@@ -411,7 +411,7 @@ const defenses = [
     "defEn": "You purposely try to forget.",
     "defZh": "你故意试图忘记。",
     "fullDefEn": "You purposely try to forget.",
-    "caseEn": "",
+    "caseEn": "Ten minutes before a meeting, you think to yourself, \"I don't want to think about that annoying email right now,\" and then genuinely forget about it temporarily. This is conscious suppression — you actively choose not to think about it for now.",
     "caseZh": "你在开会前十分钟想'我现在不想去想那个烦人的邮件'，然后真的暂时忘记了它。这是有意识的压制——你主动选择暂时不想。"
   },
   {
@@ -450,7 +450,7 @@ const defenses = [
     "defEn": "You think and act like someone you think is great.",
     "defZh": "你像某个你认为伟大的人一样思考和行动。",
     "fullDefEn": "You think and act like someone you think is great.",
-    "caseEn": "",
+    "caseEn": "A young doctor imitated his mentor — a renowned professor — in speech patterns, dress style, and even diagnostic reasoning. Through identification with the ideal image, he relieved anxiety about his own inexperience.",
     "caseZh": "一位年轻医生模仿他的导师——一位知名教授——的说话方式、穿着风格甚至诊断思路。通过与理想形象认同，他缓解了对自身能力不足的焦虑。"
   },
   {
@@ -489,7 +489,7 @@ const defenses = [
     "defEn": "You act like a lost loved one. If you keep souvenirs and never grieve, you’ve got “established pathological mourning” (Volkan, 1987a).",
     "defZh": "你表现得像一个失去的所爱之人。如果保存纪念品且从未哀伤，就是“既定的病态哀悼”。",
     "fullDefEn": "You act like a lost loved one. If you keep souvenirs and never grieve, you’ve got “established pathological mourning” (Volkan, 1987a).",
-    "caseEn": "",
+    "caseEn": "Three years after her mother died, a woman still set a place at the table for her mother's photo every day. She had never truly mourned, instead acting as though her mother were still alive — identification with the lost object — to avoid the pain of loss.",
     "caseZh": "一位女性在母亲去世三年后仍然每天给母亲的照片摆好餐具。她从未真正哀伤，而是通过表现得像母亲还活着一样（与丧失的客体认同）来回避丧失的痛苦。"
   },
   {
@@ -554,7 +554,7 @@ const defenses = [
     "defEn": "You make excuses to relieve tension, usually after denying some reality.",
     "defZh": "你制造借口来缓解紧张，通常是在否认某些现实之后。",
     "fullDefEn": "You make excuses to relieve tension, usually after denying some reality.",
-    "caseEn": "",
+    "caseEn": "A student who failed an exam said, \"That course was useless anyway, and the teacher was terrible.\" He used rationalization to relieve the shame of failing.",
     "caseZh": "一个考试不及格的学生说'反正这门课也没什么用，老师教得也不好'。他用合理化来缓解不及格带来的羞耻感。"
   },
   {
@@ -642,7 +642,7 @@ const defenses = [
     "phaseZh": "潜伏期 (6-11岁)",
     "en": "Idealization",
     "zh": "理想化",
-    "defEn": "You overvalue someone because of: a. narcissism (Freud, 1914a): to relieve shame over your inadequacy b. narcissism (Kohut, 1971): you fuse the person with your overestimated self-image (“selfobject”)...",
+    "defEn": "You overvalue someone because of: a. narcissism (Freud, 1914a): to relieve shame over your inadequacy b. narcissism (Kohut, 1971): you fuse the person with your overestimated self-image (“selfobject”) c. love: to not experience disappointments d. transference (Freud, 1914b): they’re like a wonderful parent, when you were little.",
     "defZh": "你过于看重某人，原因可能是：a) 自恋：减轻因自身缺陷引起的羞愧；b) 自恋（科胡特）：将对方与夸大的自体影像融合；c) 爱：为不体验到失望；d) 移情：对方像你幼年时美好的父母。",
     "fullDefEn": "You overvalue someone because of: a. narcissism (Freud, 1914a): to relieve shame over your inadequacy b. narcissism (Kohut, 1971): you fuse the person with your overestimated self-image (“selfobject”) c. love: to not experience disappointments d. transference (Freud, 1914b): they’re like a wonderful parent, when you were little.",
     "caseEn": "(Kohut, 1971): people confuse another person with an overestimation of",
@@ -736,7 +736,7 @@ const defenses = [
     "defEn": "Your same-sex “buddy” allays fear of heterosexual stimulation. Assorted",
     "defZh": "你的同性“伙伴”缓解了对异性刺激的恐惧。",
     "fullDefEn": "Your same-sex “buddy” allays fear of heterosexual stimulation. Assorted",
-    "caseEn": "",
+    "caseEn": "A man who felt extreme anxiety around women chose to socialize exclusively with close male friends, calling them his \"best brothers.\" Through ipsisexual object choice, he avoided the fear of intimate contact with the opposite sex.",
     "caseZh": "一个对异性感到极度焦虑的男性，选择只与同性朋友密切交往，称对方为'最好的兄弟'。通过同性客体选择，他避免了与异性亲密接触带来的恐惧。"
   },
   {
@@ -866,7 +866,7 @@ const defenses = [
     "defEn": "You convince yourself you are normal despite obvious psychopathology.",
     "defZh": "你使自己相信你是正常的，尽管存在明显的精神病理。",
     "fullDefEn": "You convince yourself you are normal despite obvious psychopathology.",
-    "caseEn": "",
+    "caseEn": "A person with a serious alcohol problem said, \"Everyone drinks, there's nothing abnormal about me.\" She used normalization to convince herself she was normal, despite clear psychopathology.",
     "caseZh": "一个有严重酗酒问题的人说'大家都喝酒啊，我没什么不正常的'。她用正常化来使自己相信自己是正常的，尽管存在明显的精神病理。"
   },
   {
@@ -879,7 +879,7 @@ const defenses = [
     "defEn": "You inject emotion into your speech to relieve conflict about being noticed.",
     "defZh": "你在言谈中注入情绪以缓解关于不被注意的冲突。",
     "fullDefEn": "You inject emotion into your speech to relieve conflict about being noticed.",
-    "caseEn": "",
+    "caseEn": "A patient told an ordinary story with exaggerated gestures and theatrical intonation. She used dramatization to relieve anxiety about not being noticed.",
     "caseZh": "一位来访者在讲述一个平凡的故事时，辅以夸张的手势和戏剧性的语调。她用戏剧化来缓解关于不被注意的焦虑。"
   },
   {
@@ -918,7 +918,7 @@ const defenses = [
     "defEn": "Clutching onto a person who rejects you.",
     "defZh": "紧紧抓住一个拒绝你的人。",
     "fullDefEn": "Clutching onto a person who rejects you.",
-    "caseEn": "",
+    "caseEn": "After her boyfriend clearly grew cold and suggested breaking up, a woman clung even harder, calling him a dozen times a day. She used clinging to avoid the fear of abandonment.",
     "caseZh": "一位女性在男友明显对她冷淡并提出分手后，反而更加紧抓不放，每天打十几个电话。她用黏附来回避被抛弃的恐惧。"
   },
   {
@@ -931,7 +931,7 @@ const defenses = [
     "defEn": "Complaining, you don’t see the infantile quality of your wish to be taken care of.",
     "defZh": "不停地抱怨，你没有看到自己想被照顾的幼稚愿望。",
     "fullDefEn": "Complaining, you don’t see the infantile quality of your wish to be taken care of.",
-    "caseEn": "",
+    "caseEn": "An employee constantly complained to colleagues about how terrible the job was and how unfair the boss was, but never took any action to change the situation. He used whining to express an infantile wish to be taken care of.",
     "caseZh": "一位员工不停向同事抱怨工作有多糟糕、老板有多不公，但从不采取任何行动改变。他用抱怨来表达想被照顾的幼稚愿望。"
   },
   {
@@ -957,7 +957,7 @@ const defenses = [
     "defEn": "Actually projection and identification with the victim: you deny oral urges, project them onto the needy, then vicariously feel nurtured.",
     "defZh": "实际上是投射和与受害者认同：你否认口欲欲望，将其投射到贫困者身上，然后替代性地感到被滋养。",
     "fullDefEn": "Actually projection and identification with the victim: you deny oral urges, project them onto the needy, then vicariously feel nurtured.",
-    "caseEn": "",
+    "caseEn": "A person who vehemently denied having any need for care spent all her time tending to homeless people, providing them with food and shelter. Through pathological altruism, she projected her own oral dependency needs onto the poor and then experienced vicarious gratification.",
     "caseZh": "一位极力否认自己有被照顾需求的人，却整天忙着照顾无家可归者，为他们提供食宿。通过病理性利他主义，她把自己的口欲需求投射到贫困者身上，然后替代性地感到被滋养。"
   },
   {
@@ -970,7 +970,7 @@ const defenses = [
     "defEn": "You cause people to be mentally disturbed or to believe they are.",
     "defZh": "你导致别人变得精神失常或相信自己精神失常。",
     "fullDefEn": "You cause people to be mentally disturbed or to believe they are.",
-    "caseEn": "",
+    "caseEn": "When his wife questioned his infidelity, a husband repeatedly told her, \"You're too paranoid\" and \"Maybe you should see a psychiatrist.\" He used gaslighting to make his wife doubt her own reality perception.",
     "caseZh": "一个丈夫在妻子质疑他的不忠时，不断告诉妻子'你太多疑了'、'你是不是该看心理医生了'。他用煤气灯效应使妻子怀疑自己的现实感知。"
   },
   {
@@ -983,7 +983,7 @@ const defenses = [
     "defEn": "You are conscious of a painful reality but give that reality little weight.",
     "defZh": "你意识到一个痛苦的现实但有意轻视它的重要性。",
     "fullDefEn": "You are conscious of a painful reality but give that reality little weight.",
-    "caseEn": "",
+    "caseEn": "After being diagnosed with a serious illness, a patient said, \"It's no big deal, many people have it worse than me.\" He used minimization to reduce the fear of facing a major illness.",
     "caseZh": "一个被诊断出严重疾病的病人说'这没什么大不了的，很多人比我更糟'。他用最小化来减轻面对重大疾病时的恐惧。"
   },
   {
@@ -1045,7 +1045,7 @@ const defenses = [
     "phaseZh": "杂类",
     "en": "Dissociation",
     "zh": "解离",
-    "defEn": "(1) You forget a whole aspect of yourself. If you name it Butch, you are probably psychotic (Frosch, 1983; Gardner, 1994). (2) You get someone to define you, then reject his or her ideas (Whitmer, 200...",
+    "defEn": "(1) You forget a whole aspect of yourself. If you name it Butch, you are probably psychotic (Frosch, 1983; Gardner, 1994). (2) You get someone to define you, then reject his or her ideas (Whitmer, 2001).",
     "defZh": "1) 你忘记了关于自己的完整面貌；如果给它取名，多半是精神病性的。2) 你让别人定义你，然后驳回对方的想法。",
     "fullDefEn": "(1) You forget a whole aspect of yourself. If you name it Butch, you are probably psychotic (Frosch, 1983; Gardner, 1994). (2) You get someone to define you, then reject his or her ideas (Whitmer, 2001).",
     "caseEn": "Some therapists and analysts (I.Brenner, 1996, 2001) have reported finding",
@@ -1061,7 +1061,7 @@ const defenses = [
     "defEn": "You avoid the light to avoid your scoptophilic (voyeuristic) impulses.",
     "defZh": "你回避光线，以回避你的窥视冲动。",
     "fullDefEn": "You avoid the light to avoid your scoptophilic (voyeuristic) impulses.",
-    "caseEn": "",
+    "caseEn": "A person with agoraphobia avoided going outside, partly to avoid light and open spaces — light can make one feel \"seen,\" which connects to anxiety about being watched (scopophilic impulses).",
     "caseZh": "一个广场恐怖症患者避免出门，部分原因是回避光线和开放空间——光线会让人感觉被'看见'，这与被观看的焦虑（窥视冲动）有关。"
   },
   {
@@ -1087,7 +1087,7 @@ const defenses = [
     "defEn": "You put others on guard to relieve your own anxiety.",
     "defZh": "你使他人处于戒备状态以缓解自己的焦虑。",
     "fullDefEn": "You put others on guard to relieve your own anxiety.",
-    "caseEn": "",
+    "caseEn": "A boy who felt insecure at school established his position by bullying smaller children. Through intimidation of others, he relieved his own anxiety.",
     "caseZh": "一个在学校里不安全的男孩通过欺负比他更小的孩子来建立自己的地位。通过恐吓他人，他缓解了自己的焦虑。"
   },
   {
@@ -1126,7 +1126,7 @@ const defenses = [
     "defEn": "You preoccupy yourself with inner musings to relieve tension or to sidestep external realities.",
     "defZh": "你全神贯注于内在沉思以缓解紧张或回避外在现实。",
     "fullDefEn": "You preoccupy yourself with inner musings to relieve tension or to sidestep external realities.",
-    "caseEn": "",
+    "caseEn": "A person spent a great deal of time alone in his inner world, repeatedly contemplating the meaning of life. Although it appeared to be \"self-exploration,\" he was actually using introspection to avoid interpersonal problems in external reality.",
     "caseZh": "一个人花大量时间独处于内心世界，反复思考人生的意义。虽然看起来像是在'自我探索'，但其实是用内省来回避外在现实中的人际关系问题。"
   },
   {
@@ -1178,7 +1178,7 @@ const defenses = [
     "defEn": "You use secondary process to avoid affects.",
     "defZh": "你使用次级过程来回避情感。",
     "fullDefEn": "You use secondary process to avoid affects.",
-    "caseEn": "",
+    "caseEn": "A man facing a marital crisis analyzed the \"data\" and \"probabilities\" of his marriage with extreme calm and logic, but never touched his own sadness and fear. He used hyper-rationality to avoid emotion.",
     "caseZh": "一个面对婚姻危机的人，用极其冷静、逻辑清晰的方式分析婚姻问题的'数据'和'概率'，但始终不触及自己的悲伤和恐惧。他使用超合理性来回避情感。"
   },
   {
@@ -1204,7 +1204,7 @@ const defenses = [
     "defEn": "You get into beauty and truth, avoiding reality or affects.",
     "defZh": "你沉迷于美和真理中，回避现实或情感。",
     "fullDefEn": "You get into beauty and truth, avoiding reality or affects.",
-    "caseEn": "",
+    "caseEn": "A person immersed himself in fine art and classical music, using the pursuit of beauty and truth to avoid dealing with real-life relationships and problems.",
     "caseZh": "一个人沉浸在艺术品和古典音乐中，用对美和真理的追求来回避处理现实生活中的关系和问题。"
   },
   {
@@ -1256,7 +1256,7 @@ const defenses = [
     "defEn": "You stop using logical, time-oriented thought.",
     "defZh": "你停止使用逻辑的、时间导向的思维。",
     "fullDefEn": "You stop using logical, time-oriented thought.",
-    "caseEn": "",
+    "caseEn": "While discussing complex emotional issues, a person suddenly began speaking in an extremely simplistic, non-logical way, as if reverting to a child's mode of thinking. Through formal regression, he avoided the painful insights that logical thought might bring.",
     "caseZh": "一个人在讨论复杂的情感问题时，突然开始用极其简单、非逻辑的方式说话，像是回到了儿童的思维方式。他通过形式退行回避了逻辑思维可能带来的痛苦洞察。"
   },
   {
@@ -1269,7 +1269,7 @@ const defenses = [
     "defEn": "You keep an eye out all the time, even when it’s entirely unnecessary.",
     "defZh": "你总是随时留意着，即使完全没有必要。",
     "fullDefEn": "You keep an eye out all the time, even when it’s entirely unnecessary.",
-    "caseEn": "",
+    "caseEn": "A PTSD patient could not relax even in a safe environment, constantly scanning the surroundings and checking exits. He used hypervigilance to defend against the possibility of being traumatized again.",
     "caseZh": "一位创伤后应激障碍患者即使在安全的环境中也无法放松，不停地扫视周围、检查出口。他用过度警觉来防御再次受创的可能。"
   },
   {
@@ -1282,7 +1282,7 @@ const defenses = [
     "defEn": "You imagine “if only…” or “someday…”",
     "defZh": "你想象着“只要……”或“有朝一日……”",
     "fullDefEn": "You imagine “if only…” or “someday…”",
-    "caseEn": "",
+    "caseEn": "A person in difficult circumstances kept saying, \"Someday everything will be fine\" and \"Once next year comes, things will get better.\" He used temporal displacement to the future to avoid facing the helplessness of the present.",
     "caseZh": "一个在困境中的人不断说'总有一天一切都会好起来的'、'只要等到明年就好了'。他用时间置换到未来来回避面对当下的无力感。"
   },
   {
