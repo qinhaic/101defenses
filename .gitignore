@@ -1,0 +1,11 @@
+# Build scripts (not needed for deployment)
+generate_data.py
+extract_cases.py
+
+# Raw JSON data (already compiled into data.js)
+parsed_en.json
+cases_en.json
+cases_zh.json
+
+# OS files
+.DS_Store

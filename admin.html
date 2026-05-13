@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>心理茶馆 · 管理后台</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+.container { max-width: 800px; width: 100%; }
+.section {
+  background: #fff; border-radius: 12px; padding: 1.5rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08); margin-bottom: 1.5rem;
+}
+h1 { font-size: 1.3rem; margin-bottom: 0.2rem; color: #333; }
+h2 { font-size: 1rem; margin-bottom: 1rem; color: #555; }
+.subtitle { font-size: 0.8rem; color: #999; margin-bottom: 1.5rem; }
+.toolbar { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.btn {
+  padding: 0.5rem 1rem; border: 1px solid #ddd; border-radius: 6px;
+  background: #fff; cursor: pointer; font-size: 0.85rem; transition: all 0.15s;
+}
+.btn:hover { background: #f0f0f0; }
+.btn-danger { border-color: #e44; color: #e44; }
+.btn-danger:hover { background: #fee; }
+.btn-danger.confirmed { background: #e44; color: #fff; }
+.list { display: flex; flex-direction: column; gap: 0.6rem; }
+.item {
+  padding: 0.8rem; border: 1px solid #e0e0e0; border-radius: 8px;
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 0.8rem;
+}
+.item-info { flex: 1; min-width: 0; }
+.item-date { font-size: 0.75rem; color: #999; }
+.item-input { font-size: 0.85rem; margin-top: 0.2rem; line-height: 1.4; }
+.item-defenses { font-size: 0.78rem; color: #666; margin-top: 0.2rem; }
+.item-del {
+  background: none; border: none; color: #ccc; cursor: pointer; font-size: 1.1rem;
+  padding: 0.2rem 0.4rem; border-radius: 50%; flex-shrink: 0;
+}
+.item-del:hover { color: #e44; background: #fee; }
+.empty { text-align: center; color: #aaa; padding: 2rem; }
+.count { font-size: 0.8rem; color: #999; margin-bottom: 0.8rem; }
+
+/* Stats cards */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 0.75rem; }
+.stat-card {
+  background: #f9f9f9; border: 1px solid #eee; border-radius: 8px;
+  padding: 0.8rem; text-align: center;
+}
+.stat-val { font-size: 1.5rem; font-weight: 700; color: #2c5f7c; }
+.stat-label { font-size: 0.75rem; color: #999; margin-top: 0.15rem; }
+
+/* Daily table */
+.daily-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.daily-table th { text-align: left; padding: 0.4rem 0.5rem; border-bottom: 2px solid #ddd; color: #666; font-size: 0.75rem; text-transform: uppercase; }
+.daily-table td { padding: 0.4rem 0.5rem; border-bottom: 1px solid #eee; }
+.daily-table tr:hover td { background: #f9f9f9; }
+
+/* Recent IPs */
+.ip-list { font-size: 0.8rem; }
+.ip-row { display: flex; justify-content: space-between; padding: 0.35rem 0; border-bottom: 1px solid #f0f0f0; }
+.ip-row .ip { font-family: monospace; color: #555; }
+.ip-row .time { color: #999; font-size: 0.75rem; }
+
+.setup-note { background: #fffbe6; border: 1px solid #ffe58f; border-radius: 8px; padding: 0.8rem; font-size: 0.8rem; color: #8a6d14; margin-top: 0.8rem; }
+.setup-note code { background: #f0f0f0; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.85em; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>心理茶馆 · 管理后台</h1>
+  <p class="subtitle">分析历史管理 + 访问统计（仅你自己知晓此页面）</p>
+
+  <!-- Visit Stats -->
+  <div class="section">
+    <h2>📊 访问统计</h2>
+    <div class="stats-grid" id="statsGrid">
+      <div class="stat-card"><div class="stat-val" id="statTotal">…</div><div class="stat-label">总访问量</div></div>
+      <div class="stat-card"><div class="stat-val" id="statToday">…</div><div class="stat-label">今日访问</div></div>
+      <div class="stat-card"><div class="stat-val" id="statUnique">…</div><div class="stat-label">独立IP数</div></div>
+    </div>
+    <div style="margin-top:1rem;">
+      <strong style="font-size:0.85rem;">按天统计</strong>
+      <table class="daily-table" style="margin-top:0.5rem;">
+        <thead><tr><th>日期</th><th>访问量</th></tr></thead>
+        <tbody id="dailyStats"><tr><td colspan="2" style="color:#999;">未配置Supabase或暂无数据</td></tr></tbody>
+      </table>
+    </div>
+    <div style="margin-top:1rem;">
+      <strong style="font-size:0.85rem;">最近访问IP</strong>
+      <div class="ip-list" id="recentIPs" style="margin-top:0.5rem;">
+        <span style="color:#999;">未配置Supabase或暂无数据</span>
+      </div>
+    </div>
+    <div class="toolbar" style="margin-top:1rem;">
+      <button class="btn" onclick="refreshStats()">刷新统计</button>
+    </div>
+    <div class="setup-note" id="setupNote" style="display:none;">
+      ⚠️ 未配置Supabase。请编辑 <code>tracker.js</code>，填入你的Supabase项目URL和anon key。
+    </div>
+  </div>
+
+  <!-- Analysis History -->
+  <div class="section">
+    <h2>📝 分析历史记录</h2>
+    <div class="toolbar">
+      <button class="btn" onclick="refreshHistory()">刷新</button>
+      <button class="btn" onclick="exportData()">导出备份</button>
+      <button class="btn btn-danger" id="clearAllBtn" onclick="clearAll()">清空全部</button>
+    </div>
+    <div class="count" id="count"></div>
+    <div class="list" id="list"></div>
+  </div>
+</div>
+
+<script>
+// ====== Supabase Config (same as tracker.js) ======
+const SB_URL = 'https://yhzamwrmxjewappnxlgc.supabase.co';
+const SB_KEY = 'sb_publishable_WKFIzuhZvMPLAK7YnVFHQw_CvJRwnfx';
+const sbReady = !SB_URL.includes('YOUR_');
+
+// ====== Visit Stats ======
+async function refreshStats() {
+  if (!sbReady) {
+    document.getElementById('setupNote').style.display = 'block';
+    return;
+  }
+  document.getElementById('setupNote').style.display = 'none';
+
+  const headers = { 'apikey': SB_KEY, 'Authorization': `Bearer ${SB_KEY}` };
+
+  try {
+    // Total count
+    const totalR = await fetch(`${SB_URL}/rest/v1/visits?select=count`, { headers });
+    const total = totalR.ok ? (await totalR.json())[0]?.count || 0 : '?';
+    document.getElementById('statTotal').textContent = total;
+
+    // Today count
+    const today = new Date().toISOString().split('T')[0];
+    const todayR = await fetch(`${SB_URL}/rest/v1/visits?select=count&created_at=gte.${today}T00:00:00Z`, { headers });
+    const todayCount = todayR.ok ? (await todayR.json())[0]?.count || 0 : '?';
+    document.getElementById('statToday').textContent = todayCount;
+
+    // Unique IPs
+    const ipR = await fetch(`${SB_URL}/rest/v1/visits?select=ip_address`, { headers });
+    if (ipR.ok) {
+      const rows = await ipR.json();
+      const uniqueIPs = new Set(rows.map(r => r.ip_address)).size;
+      document.getElementById('statUnique').textContent = uniqueIPs;
+    }
+
+    // Daily breakdown (last 30 days)
+    const dailyR = await fetch(
+      `${SB_URL}/rest/v1/visits?select=created_at&order=created_at.desc&limit=10000`,
+      { headers }
+    );
+    if (dailyR.ok) {
+      const rows = await dailyR.json();
+      const dayCounts = {};
+      rows.forEach(r => {
+        const d = r.created_at.split('T')[0];
+        dayCounts[d] = (dayCounts[d] || 0) + 1;
+      });
+      const sortedDays = Object.keys(dayCounts).sort().reverse().slice(0, 30);
+      document.getElementById('dailyStats').innerHTML = sortedDays.map(d =>
+        `<tr><td>${d}</td><td>${dayCounts[d]} 次</td></tr>`
+      ).join('') || '<tr><td colspan="2" style="color:#999;">暂无数据</td></tr>';
+    }
+
+    // Recent IPs (last 20)
+    const recentR = await fetch(
+      `${SB_URL}/rest/v1/visits?select=ip_address,created_at&order=created_at.desc&limit=20`,
+      { headers }
+    );
+    if (recentR.ok) {
+      const rows = await recentR.json();
+      document.getElementById('recentIPs').innerHTML = rows.map(r => {
+        const t = new Date(r.created_at);
+        const ts = `${t.getMonth()+1}/${t.getDate()} ${t.getHours()}:${String(t.getMinutes()).padStart(2,'0')}`;
+        return `<div class="ip-row"><span class="ip">${r.ip_address}</span><span class="time">${ts}</span></div>`;
+      }).join('') || '<span style="color:#999;">暂无数据</span>';
+    }
+  } catch (err) {
+    console.error('Stats error:', err);
+  }
+}
+
+// ====== Analysis History ======
+const HISTORY_KEY = 'defense_analysis_history';
+
+function getHistory() {
+  try { return JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; }
+  catch { return []; }
+}
+
+function refreshHistory() {
+  const history = getHistory();
+  document.getElementById('count').textContent =
+    history.length === 0 ? '暂无记录' : `共 ${history.length} 条记录`;
+
+  if (history.length === 0) {
+    document.getElementById('list').innerHTML = '<div class="empty">暂无分析记录</div>';
+    return;
+  }
+
+  document.getElementById('list').innerHTML = history.map((entry, idx) => {
+    const date = new Date(entry.timestamp);
+    const ds = `${date.getFullYear()}/${date.getMonth()+1}/${date.getDate()} ${date.getHours()}:${String(date.getMinutes()).padStart(2,'0')}`;
+    const defenses = entry.result?.defenses?.map(d => `#${d.id} ${d.nameZh}`).join(' · ') || '';
+    return `<div class="item">
+      <div class="item-info">
+        <div class="item-date">${ds}</div>
+        <div class="item-input">${entry.input}</div>
+        <div class="item-defenses">${defenses}</div>
+      </div>
+      <button class="item-del" onclick="deleteOne(${idx})" title="删除此条">✕</button>
+    </div>`;
+  }).join('');
+}
+
+let clearConfirm = false;
+function clearAll() {
+  if (!clearConfirm) {
+    const btn = document.getElementById('clearAllBtn');
+    btn.textContent = '再次点击确认清空';
+    btn.classList.add('confirmed');
+    clearConfirm = true;
+    setTimeout(() => {
+      btn.textContent = '清空全部';
+      btn.classList.remove('confirmed');
+      clearConfirm = false;
+    }, 3000);
+    return;
+  }
+  localStorage.removeItem(HISTORY_KEY);
+  clearConfirm = false;
+  refreshHistory();
+}
+
+function deleteOne(idx) {
+  const history = getHistory();
+  history.splice(idx, 1);
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+  refreshHistory();
+}
+
+function exportData() {
+  const history = getHistory();
+  const blob = new Blob([JSON.stringify(history, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'analysis_history_backup.json'; a.click();
+  URL.revokeObjectURL(url);
+}
+
+// Init
+refreshHistory();
+if (sbReady) refreshStats();
+else document.getElementById('setupNote').style.display = 'block';
+</script>
+</body>
+</html>

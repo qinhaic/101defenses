@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>101种心理防御机制 — 学习指南</title>
+<style>
+:root {
+  --bg: #faf8f5;
+  --card-bg: #fff;
+  --text: #2c2416;
+  --text-secondary: #6b5e4a;
+  --accent: #2c5f7c;
+  --accent-light: #e8f0f5;
+  --border: #e0d8cc;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-hover: 0 4px 12px rgba(0,0,0,0.1);
+  --badge-oral: #e8d5b7;
+  --badge-anal: #d4c4a8;
+  --badge-phallic: #c7d4c0;
+  --badge-latency: #c0ccd4;
+  --badge-adolescent: #d4c0cc;
+  --badge-assorted: #d0d0d0;
+  --highlight: #ffe084;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1814;
+    --card-bg: #252320;
+    --text: #e8e0d0;
+    --text-secondary: #a09880;
+    --accent: #7ab8d8;
+    --accent-light: #1e2e38;
+    --border: #3a3530;
+    --shadow: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-hover: 0 4px 12px rgba(0,0,0,0.5);
+  }
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow);
+}
+.header h1 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+}
+.header .subtitle {
+  color: var(--text-secondary);
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+}
+.header .credit {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+
+/* Controls */
+.controls {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Search */
+.search-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+  max-width: 360px;
+}
+.search-wrap input {
+  width: 100%;
+  padding: 0.55rem 1rem 0.55rem 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  font-size: 0.95rem;
+  background: var(--card-bg);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.search-wrap input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-light);
+}
+.search-icon {
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  pointer-events: none;
+}
+
+/* Phase tabs */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+}
+.tab {
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.tab:hover { border-color: var(--accent); color: var(--accent); }
+.tab.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* Toggle */
+.toggle-group {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.toggle-btn {
+  padding: 0.4rem 0.85rem;
+  border: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+.toggle-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+.toggle-btn + .toggle-btn { border-left: 1px solid var(--border); }
+
+/* Stats */
+.stats {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  padding: 1rem 1.5rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card grid */
+.grid {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1.5rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1rem;
+}
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+.card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.card-num {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--border);
+  line-height: 1;
+  pointer-events: none;
+}
+.card-phase {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.phase-oral { background: var(--badge-oral); color: #6b4e2b; }
+.phase-anal { background: var(--badge-anal); color: #5a4a32; }
+.phase-phallic { background: var(--badge-phallic); color: #3a4a30; }
+.phase-latency { background: var(--badge-latency); color: #2a3a4a; }
+.phase-adolescent { background: var(--badge-adolescent); color: #4a2a3a; }
+.phase-assorted { background: var(--badge-assorted); color: #4a4a4a; }
+
+.card-name-en {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+.card-name-zh {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+.card-def {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Modal / Detail */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 200;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+}
+.modal-overlay.show { display: flex; align-items: flex-start; justify-content: center; }
+.modal {
+  background: var(--card-bg);
+  border-radius: 16px;
+  max-width: 640px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  margin: auto;
+}
+.modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.modal-close:hover { background: var(--border); }
+.modal-num { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
+.modal-name-en { font-size: 1.4rem; font-weight: 700; color: var(--accent); margin-bottom: 0.3rem; }
+.modal-name-zh { font-size: 1.1rem; font-weight: 600; color: var(--text); margin-bottom: 1rem; }
+.modal-section { margin-top: 1.25rem; }
+.modal-section h4 { font-size: 0.8rem; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 0.05em; margin-bottom: 0.4rem; }
+.modal-section p { font-size: 0.95rem; line-height: 1.7; }
+
+/* Empty state */
+.empty { text-align: center; color: var(--text-secondary); padding: 3rem 1.5rem; grid-column: 1/-1; }
+.empty-icon { font-size: 3rem; margin-bottom: 1rem; opacity: 0.3; }
+
+/* Highlight search matches */
+mark { background: var(--highlight); padding: 0 0.15em; border-radius: 2px; color: inherit; }
+
+/* Case Studies Cards */
+.case-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  grid-column: 1 / -1;
+  transition: box-shadow 0.2s;
+}
+.case-card:hover { box-shadow: var(--shadow-hover); }
+.case-header { margin-bottom: 1rem; }
+.case-title-en { font-size: 1.15rem; font-weight: 700; color: var(--accent); }
+.case-title-zh { font-size: 1rem; font-weight: 600; color: var(--text); margin-top: 0.2rem; }
+.case-phase { font-size: 0.78rem; color: var(--text-secondary); margin-top: 0.3rem; }
+.case-narrative { margin: 0.8rem 0; font-size: 0.92rem; line-height: 1.7; }
+.case-narrative p { margin: 0; }
+.case-defenses { margin: 1rem 0; padding: 0.8rem; background: var(--accent-light); border-radius: 8px; }
+.case-label { font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.03em; }
+.case-def-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.case-def-tag {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 14px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.case-def-tag:hover { opacity: 0.8; }
+.case-outcome { margin-top: 1rem; padding-top: 0.8rem; border-top: 1px dashed var(--border); }
+.case-outcome p { font-size: 0.9rem; line-height: 1.6; margin: 0.3rem 0 0; }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--border);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer a { color: var(--accent); text-decoration: none; }
+
+/* AI Analysis Styles */
+.ai-layout { display: grid; grid-template-columns: 1fr 300px; gap: 1.5rem; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+.ai-input-panel { min-width: 0; }
+.ai-history-panel { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1rem; height: fit-content; max-height: 80vh; overflow-y: auto; position: sticky; top: 140px; }
+.ai-history-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem; }
+.ai-history-header h4 { font-size: 0.95rem; color: var(--text); margin: 0; }
+.ai-clear-btn { font-size: 0.75rem; padding: 0.2rem 0.6rem; border: 1px solid var(--border); border-radius: 12px; background: none; cursor: pointer; color: var(--text-secondary); }
+.ai-clear-btn:hover { color: #c44; border-color: #c44; }
+.ai-form-group { margin-bottom: 1rem; }
+.ai-label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--text); margin-bottom: 0.35rem; }
+.ai-select, .ai-textarea {
+  width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--border); border-radius: 8px;
+  font-size: 0.9rem; background: var(--card-bg); color: var(--text); font-family: inherit;
+  outline: none; transition: border-color 0.2s;
+}
+.ai-select:focus, .ai-textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-light); }
+.ai-textarea { resize: vertical; min-height: 100px; }
+.ai-examples { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.ai-example-btn {
+  font-size: 0.78rem; padding: 0.3rem 0.65rem; border: 1px solid var(--border); border-radius: 16px;
+  background: var(--card-bg); color: var(--text-secondary); cursor: pointer; transition: all 0.2s;
+}
+.ai-example-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
+.ai-analyze-btn {
+  width: 100%; padding: 0.75rem; border: none; border-radius: 10px;
+  background: var(--accent); color: #fff; font-size: 1rem; font-weight: 600;
+  cursor: pointer; transition: opacity 0.2s;
+}
+.ai-analyze-btn:hover { opacity: 0.9; }
+.ai-analyze-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.ai-note { font-size: 0.78rem; color: var(--text-secondary); margin-top: 0.5rem; text-align: center; }
+.ai-loading { text-align: center; padding: 2rem; }
+.ai-spinner {
+  width: 36px; height: 36px; border: 3px solid var(--border); border-top-color: var(--accent);
+  border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 1rem;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.ai-result { margin-top: 1.5rem; }
+.ai-result-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+.ai-result-summary { margin-bottom: 1rem; }
+.ai-result-summary p { font-size: 0.92rem; line-height: 1.6; color: var(--text); margin-top: 0.3rem; }
+.ai-defense-item {
+  padding: 0.8rem; margin: 0.5rem 0; border-left: 3px solid var(--accent);
+  background: var(--accent-light); border-radius: 0 8px 8px 0;
+}
+.ai-defense-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.3rem; flex-wrap: wrap; }
+.ai-defense-num { font-weight: 700; color: var(--accent); font-size: 0.9rem; }
+.ai-defense-name { font-size: 0.9rem; font-weight: 600; color: var(--text); }
+.ai-defense-reason { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0; }
+.ai-disclaimer-inline {
+  font-size: 0.78rem; color: var(--text-secondary); margin-top: 1rem; padding-top: 0.8rem;
+  border-top: 1px dashed var(--border); font-style: italic;
+}
+.ai-error { padding: 1.5rem; background: #fff0f0; border: 1px solid #fcc; border-radius: 8px; color: #c44; }
+.ai-history-list { display: flex; flex-direction: column; gap: 0.5rem; }
+.ai-history-item {
+  padding: 0.65rem; border: 1px solid var(--border); border-radius: 8px; cursor: pointer;
+  transition: all 0.15s; font-size: 0.8rem;
+}
+.ai-history-item:hover { border-color: var(--accent); background: var(--accent-light); }
+.ai-history-date { color: var(--text-secondary); font-size: 0.72rem; }
+.ai-history-input { color: var(--text); font-weight: 500; margin-top: 0.15rem; }
+.ai-history-summary { color: var(--text-secondary); font-size: 0.75rem; margin-top: 0.15rem; }
+
+/* Footer Styles */
+.site-footer { margin-top: 3rem; border-top: 2px solid var(--border); background: var(--card-bg); }
+.footer-content { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
+.footer-section { margin-bottom: 1.5rem; }
+.footer-section h4 { font-size: 0.95rem; color: var(--accent); margin-bottom: 0.5rem; }
+.footer-section p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin: 0.2rem 0; }
+.footer-disclaimer { background: #fff8e1; border: 1px solid #ffe082; border-radius: 10px; padding: 1rem; }
+.footer-disclaimer h4 { color: #e6a700; }
+@media (prefers-color-scheme: dark) {
+  .footer-disclaimer { background: #2a2410; border-color: #5a4a10; }
+  .footer-disclaimer h4 { color: #ffc107; }
+  .ai-error { background: #2a1010; border-color: #5a2020; color: #f66; }
+}
+.footer-copyright { text-align: center; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+.footer-copyright p { font-size: 0.8rem; color: var(--text-secondary); }
+
+/* Responsive */
+@media (max-width: 500px) {
+  .grid { grid-template-columns: 1fr; }
+  .controls { gap: 0.5rem; }
+  .tab { font-size: 0.78rem; padding: 0.3rem 0.6rem; }
+}
+@media (max-width: 768px) {
+  .ai-layout { grid-template-columns: 1fr; }
+  .ai-history-panel { position: static; max-height: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>心灵的面具：101种心理防御</h1>
+  <p class="subtitle">101 Defenses: How the Mind Shields Itself</p>
+  <p class="credit">Jerome S. Blackman, M.D. — 中英双语学习版 | 心理茶馆 出品</p>
+</div>
+
+<div class="controls">
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="search" placeholder="搜索防御机制（中英文均可）…">
+  </div>
+  <div class="toggle-group" id="langToggle">
+    <button class="toggle-btn active" data-lang="both">中英</button>
+    <button class="toggle-btn" data-lang="zh">中文</button>
+    <button class="toggle-btn" data-lang="en">English</button>
+  </div>
+</div>
+
+<div class="controls" style="justify-content:center;">
+  <div class="toggle-group" id="viewToggle">
+    <button class="toggle-btn active" data-view="defenses">防御列表</button>
+    <button class="toggle-btn" data-view="cases">案例研讨</button>
+    <button class="toggle-btn" data-view="ai">AI 分析</button>
+  </div>
+</div>
+
+<div class="controls tabs" id="phaseTabs">
+  <button class="tab active" data-phase="all">全部 (101)</button>
+  <button class="tab" data-phase="oral">口欲期 (1-3)</button>
+  <button class="tab" data-phase="anal">肛欲期 (4-18)</button>
+  <button class="tab" data-phase="phallic">第一性器期 (19-39)</button>
+  <button class="tab" data-phase="latency">潜伏期 (40-50)</button>
+  <button class="tab" data-phase="adolescent">青春期 (51-56)</button>
+  <button class="tab" data-phase="assorted">杂类 (57-101)</button>
+</div>
+
+<div class="stats" id="stats"></div>
+
+<div id="visitCounter" style="text-align:center;font-size:0.85rem;color:var(--text-secondary);padding:0 1.5rem;max-width:1200px;margin:0 auto 0.5rem;"></div>
+
+<div class="grid" id="grid"></div>
+
+<!-- Case Studies Section -->
+<div class="grid" id="caseGrid" style="display:none;"></div>
+
+<!-- AI Analysis Section -->
+<div id="aiContainer" style="display:none;"></div>
+
+<!-- Footer -->
+<div class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>📚 关于本网站</h4>
+      <p>本网站基于 Jerome S. Blackman 著作 <em>《101 Defenses: How the Mind Shields Itself》</em>（Routledge, 2004）编制，仅供学习交流使用，不收取任何费用。</p>
+      <p>原著版权归 Jerome S. Blackman 及 Routledge / Taylor & Francis Group 所有。</p>
+      <p>中文翻译由网站编者提供，仅供学习参考，可能存在不准确之处。</p>
+    </div>
+    <div class="footer-section footer-disclaimer">
+      <h4>⚠️ 免责声明</h4>
+      <p><strong>本网站不提供任何形式的心理诊断、治疗或专业咨询。</strong></p>
+      <p>AI 防御机制分析功能仅为学习参考性质，其结论可能不准确、不完整或不适用于特定个人情况。AI 的判断不应被视为专业心理学意见。</p>
+      <p>如果您正在经历心理健康方面的困扰，请务必寻求持证心理咨询师、精神科医生或其他合格专业人士的帮助。</p>
+      <p>如涉及自杀念头或紧急情况，请立即拨打当地心理危机干预热线或前往最近医院急诊。</p>
+        <p style="margin-top:0.5rem;font-size:0.8rem;">📊 本网站记录访问量用于统计分析，包括访问时间与IP地址。不涉及个人身份信息。详见隐私说明。</p>
+    </div>
+    <div class="footer-copyright">
+      <p>© 2024 心理茶馆（101defenses）— 心灵的面具学习站 | 本网站为教育目的而建，无商业用途</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  基于 Jerome S. Blackman 《101 Defenses: How the Mind Shields Itself》(Routledge, 2004) 编制 |
+  中文翻译仅供参考，欢迎校对指正 | 心理茶馆 🍵
+</div>
+
+<!-- Detail Modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="case-studies.js"></script>
+<script src="ai-analysis.js"></script>
+<script src="tracker.js"></script>
+<script>
+// State
+let currentPhase = 'all';
+let currentLang = 'both';
+let searchQuery = '';
+let currentView = 'defenses';
+
+// DOM refs
+const grid = document.getElementById('grid');
+const caseGrid = document.getElementById('caseGrid');
+const searchInput = document.getElementById('search');
+const stats = document.getElementById('stats');
+const modalOverlay = document.getElementById('modalOverlay');
+const modalContent = document.getElementById('modalContent');
+
+// Render all cards
+function render() {
+  let filtered = defenses;
+
+  // Phase filter
+  if (currentPhase !== 'all') {
+    filtered = filtered.filter(d => d.phase === currentPhase);
+  }
+
+  // Search filter
+  if (searchQuery.trim()) {
+    const q = searchQuery.trim().toLowerCase();
+    filtered = filtered.filter(d =>
+      d.en.toLowerCase().includes(q) ||
+      d.zh.includes(q) ||
+      d.defEn.toLowerCase().includes(q) ||
+      d.defZh.includes(q)
+    );
+  }
+
+  stats.textContent = `显示 ${filtered.length} / ${defenses.length} 种防御机制`;
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '<div class="empty"><div class="empty-icon">📭</div><p>没有找到匹配的防御机制</p><p style="font-size:0.85rem">试试换个关键词？</p></div>';
+    return;
+  }
+
+  grid.innerHTML = filtered.map(d => {
+    const enName = highlight(d.en);
+    const zhName = highlight(d.zh);
+    const defText = currentLang === 'en' ? d.defEn :
+                     currentLang === 'zh' ? d.defZh :
+                     d.defZh; // default show Chinese def on card
+
+    let displayName = '';
+    let displayDef = '';
+
+    if (currentLang === 'en') {
+      displayName = `<div class="card-name-en">${enName}</div>`;
+      displayDef = `<div class="card-def">${d.defEn}</div>`;
+    } else if (currentLang === 'zh') {
+      displayName = `<div class="card-name-zh">${zhName}</div>`;
+      displayDef = `<div class="card-def">${d.defZh}</div>`;
+    } else {
+      displayName = `<div class="card-name-en">${enName}</div><div class="card-name-zh">${zhName}</div>`;
+      displayDef = `<div class="card-def">${d.defZh}</div>`;
+    }
+
+    const hasCase = d.caseZh ? ' <span style="font-size:0.7rem;opacity:0.6" title="含临床案例">📋</span>' : '';
+    return `
+      <div class="card" onclick="openDetail(${d.id})" data-id="${d.id}">
+        <div class="card-num">${d.id}</div>
+        <span class="card-phase phase-${d.phase}">${d.phaseZh}</span>
+        ${displayName}${hasCase}
+        ${displayDef}
+      </div>
+    `;
+  }).join('');
+}
+
+function highlight(text) {
+  if (!searchQuery.trim()) return text;
+  const q = searchQuery.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const re = new RegExp(`(${q})`, 'gi');
+  return text.replace(re, '<mark>$1</mark>');
+}
+
+function openDetail(id) {
+  const d = defenses.find(x => x.id === id);
+  if (!d) return;
+
+  let caseHtml = '';
+  if (d.caseZh || d.caseEn) {
+    caseHtml = `<div class="modal-section">
+      <h4>临床案例 / Clinical Case</h4>
+      ${d.caseZh ? `<p style="margin-bottom:0.8rem">${d.caseZh}</p>` : ''}
+      ${d.caseEn ? `<p style="color:var(--text-secondary);font-size:0.9rem">${d.caseEn}</p>` : ''}
+    </div>`;
+  }
+  modalContent.innerHTML = `
+    <div class="modal-num">#${d.id} · ${d.phaseZh}</div>
+    <div class="modal-name-en">${d.en}</div>
+    <div class="modal-name-zh">${d.zh}</div>
+    <div class="modal-section">
+      <h4>English Definition</h4>
+      <p>${d.fullDefEn}</p>
+    </div>
+    <div class="modal-section">
+      <h4>中文定义</h4>
+      <p>${d.defZh}</p>
+    </div>
+    ${caseHtml}
+  `;
+  modalOverlay.classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modalOverlay.classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+// Event listeners
+searchInput.addEventListener('input', (e) => {
+  searchQuery = e.target.value;
+  render();
+});
+
+document.getElementById('phaseTabs').addEventListener('click', (e) => {
+  if (e.target.classList.contains('tab')) {
+    document.querySelectorAll('#phaseTabs .tab').forEach(t => t.classList.remove('active'));
+    e.target.classList.add('active');
+    currentPhase = e.target.dataset.phase;
+    render();
+  }
+});
+
+document.getElementById('langToggle').addEventListener('click', (e) => {
+  if (e.target.classList.contains('toggle-btn')) {
+    document.querySelectorAll('#langToggle .toggle-btn').forEach(b => b.classList.remove('active'));
+    e.target.classList.add('active');
+    currentLang = e.target.dataset.lang;
+    render();
+  }
+});
+
+document.getElementById('modalClose').addEventListener('click', closeModal);
+modalOverlay.addEventListener('click', (e) => {
+  if (e.target === modalOverlay) closeModal();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
+});
+
+// Case studies rendering
+function renderCases() {
+  caseGrid.innerHTML = caseStudies.map(cs => {
+    const defsHtml = cs.defensesUsed.map(d =>
+      `<span class="case-def-tag" onclick="event.stopPropagation();openDetail(${d.id})" title="${d.note}">#${d.id} ${d.zh}</span>`
+    ).join(' ');
+
+    return `
+      <div class="case-card">
+        <div class="case-header">
+          <div class="case-title-en">${cs.titleEn}</div>
+          <div class="case-title-zh">${cs.titleZh}</div>
+          <div class="case-phase">${cs.phase}</div>
+        </div>
+        <div class="case-narrative">
+          <p>${cs.narrativeZh}</p>
+        </div>
+        <div class="case-defenses">
+          <div class="case-label">防御机制 / Defenses Used:</div>
+          <div class="case-def-tags">${defsHtml}</div>
+        </div>
+        <div class="case-outcome">
+          <div class="case-label">结果 / Outcome:</div>
+          <p>${cs.outcomeZh}</p>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  if (currentLang === 'en') {
+    caseGrid.innerHTML = caseStudies.map(cs => {
+      const defsHtml = cs.defensesUsed.map(d =>
+        `<span class="case-def-tag" onclick="event.stopPropagation();openDetail(${d.id})" title="${d.note}">#${d.id} ${d.name}</span>`
+      ).join(' ');
+      return `
+        <div class="case-card">
+          <div class="case-header">
+            <div class="case-title-en">${cs.titleEn}</div>
+            <div class="case-phase">${cs.phase}</div>
+          </div>
+          <div class="case-narrative"><p>${cs.narrativeEn}</p></div>
+          <div class="case-defenses">
+            <div class="case-label">Defenses Used:</div>
+            <div class="case-def-tags">${defsHtml}</div>
+          </div>
+          <div class="case-outcome">
+            <div class="case-label">Outcome:</div>
+            <p>${cs.outcomeEn}</p>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+}
+
+// View toggle
+document.getElementById('viewToggle').addEventListener('click', (e) => {
+  if (e.target.classList.contains('toggle-btn')) {
+    document.querySelectorAll('#viewToggle .toggle-btn').forEach(b => b.classList.remove('active'));
+    e.target.classList.add('active');
+    currentView = e.target.dataset.view;
+
+    // Hide all views first
+    grid.style.display = 'none';
+    caseGrid.style.display = 'none';
+    document.getElementById('aiContainer').style.display = 'none';
+    document.getElementById('phaseTabs').style.display = 'none';
+    searchInput.style.display = 'none';
+    if (document.querySelector('.search-icon')) {
+      document.querySelector('.search-icon').style.display = 'none';
+    }
+
+    if (currentView === 'cases') {
+      caseGrid.style.display = 'grid';
+      stats.textContent = `显示 ${caseStudies.length} 个多重防御案例`;
+      renderCases();
+    } else if (currentView === 'ai') {
+      document.getElementById('aiContainer').style.display = 'block';
+      stats.textContent = 'AI 防御机制分析（仅供学习参考）';
+      if (typeof renderAIAnalysisView === 'function') {
+        renderAIAnalysisView();
+      }
+    } else {
+      grid.style.display = 'grid';
+      document.getElementById('phaseTabs').style.display = 'flex';
+      searchInput.style.display = '';
+      if (document.querySelector('.search-icon')) {
+        document.querySelector('.search-icon').style.display = '';
+      }
+      render();
+    }
+  }
+});
+
+// Initial render
+render();
+</script>
+</body>
+</html>
